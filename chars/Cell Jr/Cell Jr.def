@@ -1,0 +1,28 @@
+
+[Info]
+name    ="Cell-Jr by Pextin"
+displayname ="Cell Jr."
+versiondate =06,18,2005
+authorname = "Pextin"
+pal.defaults=1,2,3,4
+mugenversion=
+author=""
+
+[Files]
+cmd      =Cell-Jr.cmd
+cns      =Cell-Jr.cns
+st       =Cell-Jr.cns
+stcommon =Cell-Jrcommon1.cns
+sprite   =Cell-Jr.sff
+anim     =Cell-Jr.air
+sound    =Cell-Jr.snd
+pal1=Cell-Jr-Def.act
+st1=AI.cns
+st2=Basics.cns
+st3=Specials.cns
+st4=Supers.cns
+st5=Specials.cns
+st6=Supers.cns
+[Arcade]
+intro.storyboard=
+ending.storyboard=

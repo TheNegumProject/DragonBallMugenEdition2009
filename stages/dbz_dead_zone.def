@@ -1,0 +1,133 @@
+[Info]
+name = "Dead Zone"
+;by Stig87
+;email = b_blue34@yahoo.com
+;Mugendream.bravehost.com
+;Mugendream.angelfire.com
+
+
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -352
+boundright = 352
+boundhigh = -300
+boundlow = 0
+verticalfollow = .7
+floortension = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  = 0
+botbound  = 0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 24
+screenright = 24
+
+[StageInfo]
+zoffset = 210
+Autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 0,0,0
+yscale = .3
+reflect = 0
+
+[Music]
+bgmusic =sound/wthf.mp3
+bgvolume =255
+[BGdef]
+spr =stages/dbz_dead_zone.sff
+DEBUGBG=0
+DEBUG=0
+
+
+[BG deadzone]
+type  = Anim
+Actionno = 0
+start = 0, 74
+delta = .2, .2
+velocity = 0,0
+mask = 0
+tile = 0, 0
+
+
+[BG fond]
+type = normal
+spriteno = 0,0
+start = 0, 0
+delta = .45,.5
+mask = 1
+
+[BG decor]
+type = normal
+spriteno = 2,0
+start = 0, 0
+delta = .85,.8
+mask = 1
+
+
+[BG decor]
+type = normal
+spriteno = 1,0
+start = 0, 0
+delta = 1,1
+mask = 1
+
+
+
+[Begin action 0]
+3, 32, 0, 0, 8
+3, 31, 0, 0, 8
+3, 30, 0, 0, 8
+3, 29, 0, 0, 8
+3, 28, 0, 0, 8
+3, 27, 0, 0, 8
+3, 26, 0, 0, 8
+3, 25, 0, 0, 8
+3, 24, 0, 0, 8
+3, 23, 0, 0, 8
+3, 22, 0, 0, 8
+3, 21, 0, 0, 8
+3, 20, 0, 0, 8
+3, 19, 0, 0, 8
+3, 18, 0, 0, 8
+3, 17, 0, 0, 8
+3, 16, 0, 0, 8
+3, 15, 0, 0, 8
+3, 14, 0, 0, 8
+3, 13, 0, 0, 8
+3, 12, 0, 0, 8
+3, 11, 0, 0, 8
+3, 10, 0, 0, 8
+3, 9, 0, 0, 8
+3, 8, 0, 0, 8
+3, 7, 0, 0, 8
+3, 6, 0, 0, 8
+3, 5, 0, 0, 8
+3, 4, 0, 0, 8
+3, 3, 0, 0, 8
+3, 2, 0, 0, 8
+3, 1, 0, 0, 8
+3, 0, 0, 0, 8

@@ -1,0 +1,42 @@
+********************************************
+VERSION 1.5
+********************************************
+Whats New?
+-Completely New Sprites
+-Completely New Beam Effects
+-Slightly Tweaked Gameplay
+-Fixed/Changed Power Pole Hyper
+-Got Rid Of All Palletes, Due To New Sprites
+
+********************************************
+OLD VERSION 1.0
+********************************************
+Kid Goku By Ryon
+
+Sprite Origin = Dragon Ball Advance Adventure
+Sprite Rippers = Grim & Bonzai, please check out - http://sdb.drshnaps.com/index.htm - for all the other sprites these 2 have ripped. and !Doom! for the Oozaru sprites, which i had to recolor.
+Coding = Ryon
+Semi HR Sprites = Paintshop Pro 11, Enlarged Image 2x, then used some Noise to High Res them out. i also used Paintshop Pro to redo his Effects to look awesomer.
+
+Kid Goku Move List!
+X = AUTO PUNCH COMBO (3 HIT)
+Y = AUTO KICK COMBO (4 HIT, KNOCK UP)
+Z = AUTO POWER POLE COMBO (3 HIT, KNOCK BACK)
+
+KAMEHAMEHA WAVE = Down, Back, Foward, A
+DRAGON FIST = Not Implemented, Down, Back, Foward, B
+POWER POLE EXTEND = Not Implemented, Down, Back, Foward, C
+
+All of Kid Goku's moves and attacks are interchangeable, meaning he can easily chain moves , for instance he can do.
+
+X, X, Y, Y to get a 4 hit combo which launches the opponent in the air, after he can either jump up and do a air combo. X,X, or Y,Y, or X,Y etc etc.
+
+his move FAIR combo that i could think of that involves all buttons is.
+
+X, X ,X ,Y ,Y, Z, Z, Y, Y *JUMP* X TWICE OR Y TWICE.
+
+SPECIAL AND MAJOR THANKS TO...
+MUGEN FREE FOR ALL (MY BUDDIES!)
+MASTER GOUKEN (Makkah On Mugen Guild)
+SATOU SEI *MAJOR THANKS DUDE*
+GRIM AND BONZAI FOR RIPPING THE SPRITES.

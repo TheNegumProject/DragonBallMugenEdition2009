@@ -1,0 +1,25 @@
+;..........................................................................................
+[Info]
+name ="janemba by Franciynaldo"
+displayname ="Janemba"
+versiondate =25,10,2007
+mugenversion =06,14,2003
+author ="D-GENERACIONZ - Team"
+pal.defaults =1,2,3,4,5,6
+[Files]
+cmd=janemba.cmd
+cns=janemba.cns
+st=janemba.cns
+stcommon=common1.cns
+sprite=janemba.sff
+anim=janemba.air
+sound=janemba.snd
+pal1=janemba3.act
+; Arcade mode
+[Arcade]
+intro.storyboard =
+ending.storyboard=final/final.def
+;...........................................................................................
+
+                                        
+;                              Autor: equipe DZGTEAM

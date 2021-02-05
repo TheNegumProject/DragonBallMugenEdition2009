@@ -1,0 +1,43 @@
+;==================================================================================================
+; Hajime No Ippo "press start" cutscene
+;
+; By Ironmugen
+; http://deltapark.i-xcell.com
+;
+;==================================================================================================
+
+[SceneDef]
+spr = system.sff
+startscene = 0         ;Starting scene number (for debugging)
+
+;------------------------------------
+[Scene 0]
+; Fade
+fadein.time = 60       ;Time to take for fading in
+fadein.col = 0,0,0     ;Use 255,255,255 for white-fade
+fadeout.time = 15
+fadeout.col = 0,0,0
+; Screen color
+clearcolor = 255,255,255
+; Overlay Anims (from 0 to 9)
+layerall.pos = 160,0   ;Default position for all layers
+layer0.anim =  0       ;Anim action number
+layer0.offset = 0,0   ;Position offset
+layer0.starttime = 0   ;Time to start display
+layer1.anim =  1       ;Anim action number
+layer1.offset = 0,0   ;Position offset
+layer1.starttime = 0   ;Time to start display
+; Music
+bgm = cci_hni1.mp3        ;Name of music file to play
+bgm.loop = 1
+; Total time
+end.time = 4140
+
+;---------------
+
+[Begin Action 0]
+2,0, 0,0, -1
+
+[Begin Action 1]
+2,1, 0,0, 30
+-1,0, 0,0, 20

@@ -1,0 +1,53 @@
+|-Cell-Jr's Moves---------------------------------------------------------------
+Version - 2.1
+Character made by Goten88 a.k.a. Pextin http://goten88.shorturl.com
+|-Basics------------------------------------------------------------------------
+
+a   = Light Punch
+b   = Hard Punch
+x   = Light Kick
+y   = Hard Kick
+
+Taunt               - s
+Fly or Land         - a+x
+Zanzoken            - b+y - (Hold it and press any direction)
+
+|-Specials----------------------------------------------------------------------
+
+Taioken             - D,DF,F, a
+Charging Knee       - D,DB,B, a
+Zip Strike          - D,DF,F, b
+Aerial Knee         - D,DB,B, b
+Lunge Punch         - D,DF,F, x
+UnderGround Combo*  - B,F, x 
+Spin Throw          - F, x - (Must be close to P2)
+Ki Shot             - D,DF,F, y (Tap Up to 3 Times)
+Distructo Disk      - D,DB,B, y (Power >= 1000)
+Swat*               - F, y
+
+|-Supers----------------------------------------------------------------------
+Kamehameha          - D,DB,B,D,DF,F, x (Power >= 1000)
+Special Beam Cannon - D,DB,B,D,DF,F, y (Power >= 2000)
+Sokidan             - D,DB,B,D,DF,F, a (Power >= 1500)
+
+* means only during Air(Jumping) or Flying
+ 
+Special thanks to:
+
+Akira Toriyama - For creating Dragonball Z
+
+Bandai - For the Cell Jr sprites from Super Butouden 2 
+
+Detah - For Super Renzoku Energy Dan Code & help
+
+Toad - For some FX
+
+ReDSpideR - For a few custom sprites
+
+Roken - For the Blue Smoke Effect
+
+Majita - For help with coding
+
+Insydious - For editing cell intro sprites & hidden stuff 
+
+and anyone else I can't think of who helped me.

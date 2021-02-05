@@ -1,0 +1,213 @@
+[Info]
+name ="Android 13-Snow Field"
+displayname="Android 13-Snow Field"
+versiondate=7/20/2008
+mugenversion=04,14,2001
+author=""
+pal.defaults=1,2,3,4,5
+Autor : Soufiane ( S.S POWER )
+Mugen version : Mugen dos / Linux / 2002/2003/2006 His-res
+[Camera]
+startx = 0 
+starty = 0 
+boundleft = -10 
+boundright = 100 
+boundhigh = 0
+boundlow = 0
+verticalfollow = .3 
+floortension = 0
+tension = 50 
+[PlayerInfo]
+p1startx = -70 
+p1starty = 0 
+p1startz = 0 
+p1facing = 1 
+p2startx = 70 
+p2starty = 0
+p2startz = 0 
+p2facing = -1 
+leftbound = -1000 
+rightbound = 1000 
+topbound = 0
+botbound = 0 
+
+[Scaling]
+topz = 0 
+botz = 50 
+topscale = 1 
+botscale = 1.2 
+
+[StageInfo]
+zoffset = 205
+autoturn = 1
+resetBG = 1
+[Scaling]
+topz = 0 
+botz = 50 
+topscale = 1 
+botscale = 1.2 
+[Music]
+bgmusic = sound/MajinVegeta_theme_Ampli250.mp3
+bgvolume = 255
+[Bound]
+screenleft = 0
+screenright = 0 
+[Shadow]
+intensity = 0 
+color = 0,0,0
+yscale = 0 
+reflect = 0
+[Reflection]
+intensity = 256
+[BGdef]
+spr = stages/Ice_dbz.sff
+debugbg = 0 
+[BG Back]
+type = normal
+spriteno = 0,0
+start = -200,30
+delta = 1,1
+layerno = 0
+mask = 0
+tile = 0, 0
+tilespacing = 0,0
+trans = none
+[BG volg]
+type = normal
+spriteno =0,1
+start = -160,-20
+tile = -1
+tilespacing = 60,0
+velocity = 0.2, 0
+mask = 0
+trans = add
+[BG Volg]
+type = normal
+spriteno =0,1
+start = -160,100
+tile = 1
+tilespacing = 60,0
+velocity = -1, 0
+mask = 0
+layerno = 1
+trans = add
+
+[BG Volg]
+type = normal
+spriteno =0,1
+start = -160,160
+tile = 1
+tilespacing = 60,0
+velocity = -3, 0
+mask = 0
+layerno = 1
+trans = add
+
+[BG Snow]
+type  = normal
+spriteno = 4,0
+layerno = 1
+start = 0, -125
+delta = 1, 1
+velocity = -3,2.5
+trans = none
+mask  = 1
+tile  = 1, 1
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+[BG C18]
+type  = normal
+spriteno = 3,0
+layerno = 0
+start = 0, 0
+mask  = 1
+[BG c18.Aura]
+type  =Anim
+Actionno = 0
+layerno = 0
+start = 0, 0
+mask  = 1
+[Begin Action 0]
+5,0, 0,0, 5,, A
+5,1, 0,0, 5,, A
+5,2, 0,0, 5,, A
+[BG Truncks]
+type  =Normal
+spriteno = 6,0
+layerno = 0
+start = 0, 0
+mask  = 1
+[BG T.Aura]
+type  =Anim
+Actionno = 1
+layerno = 0
+start = 0, 0
+mask  = 1
+[Begin Action 1]
+7,0, 0,0, 5,, A
+7,1, 0,0, 5,, A
+7,2, 0,0, 5,, A
+[BG T.Aura]
+type  =Anim
+Actionno = 2
+layerno = 0
+start = 0, 0
+mask  = 1
+
+
+;0
+[Begin Action 2]
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+8,1, 0,0, 10
+8,2, 0,0, 28
+9,0, 0,0, 10
+9,1, 0,0, 40
+Loopstart
+9,2, 0,0, 28
+[Files]
+sprite=
+sound=
+anim=
+cmd=
+cns=
+st=
+stcommon=
+[Arcade]
+intro.storyboard=
+ending.storyboard=

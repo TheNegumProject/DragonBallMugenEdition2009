@@ -1,0 +1,158 @@
+;Dragon Ball byRistaR87 -MUGEN Edition
+;---------------------------------------------------------------------
+[Characters]
+==blank. portrait area==
+==blank. portrait area==
+==blank. portrait area==
+==blank. portrait area==
+Goku kid, stages/korin.def;
+Goku, stages/rocky_mountain.def;
+Goku Legend SSJ, stages/Namek-Destruido.def;
+Goku SSJ2, stages/Kamis_Lookout.def;
+Goku SSJ3, stages/City_Temple.def;
+Goku SSJ4, stages/New_Tuffle_Planet.def;
+Gogeta SSJ4, stages/tufflep.def;
+==       blank area        ==
+==       blank area        ==
+==       blank area        ==
+==       blank area        ==
+Vegeta Saiyan, stages/Rocknroll.def, music=sound/Saga_Cell_battletheme_Ampli350.mp3
+Vegeta, stages/Earth1.def;
+Vegeta SSJ, stages/Earth1.def;
+Majin Vegeta SSJ2, stages/Rocknroll.def;
+Vegeta SSJ4, stages/ruins.def;
+Vegetto SSJ, stages/Earth1.def, music=sound/Intros.mp3
+Gogeta SSJ, stages/SnakewayN.def;
+==       blank area        ==
+==       blank area        ==
+==       blank area        ==
+==       blank area        ==
+Gohan, stages/Piccolo_Waterfall.def;
+Gohan SSJ2, stages/CellGameUB.def;
+Gohan SSJ Z, stages/Planet_Gods_Goku.def;
+Mystic Gohan, stages/PlanetaKaioshin.def;
+Trunks, stages/road.def;
+Trunks SSJ2, stages/CellGameUB.def;
+Trunks Kid, stages/Tournament.def;
+==       blank area        ==
+==       blank area        ==
+==       blank area        ==
+==       blank area        ==
+Gotenks SSJ, stages/roomofspaceandtime.def;
+Goten, stages/Tournament.def;
+Goten GT, stages/road.def;
+Saiyaman, stages/road.def;
+Piccolo, stages/Kamis_Lookout.def;
+Pikkon, stages/dbz_alife_tourn.def;
+Supreme Kai, stages/PlanetaKaioshin.def;
+Goku Oozaru, stages/Shenron.def;
+Krillin, stages/dbz_kame_house.def;
+Krillin Z, stages/dbz_kame_house.def;
+Yamcha, stages/korin.def;
+Tien, stages/karintemple.def;
+Chiaotzu, stages/karintemple.def;
+Master Roshi, stages/dbz_kame_house.def;
+King Piccolo, stages/Shenron.def;
+Garlic Jr, stages/dbz_dead_zone.def;
+Bojack, stages/earth-the-night.def;
+Zangya, stages/Baba_Arena.def;
+Frieza, stages/Namek-Destruido.def;
+Cooler, stages/cataract.def;
+Ginyu, stages/namek.def;
+Recoome, stages/namek.def;
+Jeice, stages/namek.def;
+Guldo, stages/namek.def;
+Raditz, stages/Earth1.def;
+Nappa, stages/Rocknroll.def;
+Turles, stages/dbz_tree_of_might.def;
+Bardock, stages/caminho_da_serpente.def;
+Broly, stages/earth-the-night.def;
+Dr. Gero, stages/Destruction.def;
+Android 17, stages/Destruction.def;
+Android 18, stages/Destruction.def;
+Cell 1st Form, stages/cataract.def;
+Cell, stages/CellGameUB.def, music=sound/dbz_cell.mp3
+Cell Jr, stages/CellGameUB.def;
+Majin Buu, stages/PlanetaKaioshin.def;
+Evil Buu, stages/Earth1.def, music=sound/revontuelt.mp3
+Kid Buu, stages/Planet_Gods_Goku.def, music=sound/Intros.mp3
+==       blank area        ==
+==       blank area        ==
+Taopai, stages/Baba_Arena.def;
+Janemba, stages/Janemba_Stage.def;
+Dabura, stages/Rocknroll.def;
+Puipui, stages/Babidi_Ship.def;
+Baby Vegeta, stages/New_Tuffle_Planet.def;
+Super Baby Vegeta, stages/tufflep.def;
+4-Star Dragon, stages/tufflep.def;
+Oozaru, stages/earth-the-night.def;
+Goku SSJ5, stages/ruins.def;
+==       blank area        ==
+==       blank area        ==
+Gohan Armored, stages/roomofspaceandtime.def;
+Future Gohan, stages/Destruction.def;
+Ragged Goku, stages/Storm2.def;
+Goku Iadora, stages/frieza_spaceship.def;
+Goku kid SSJ3, stages/Giant_Plants.def;
+Goku GT, stages/Kamis_Lookout.def, music=sound/Dragon_Ball_GT_Theme.mp3
+Vegeta GT, stages/New_Tuffle_Planet.def, music=sound/dbz_vegeta.ogg
+
+
+;-----------------------
+[ExtraStages]
+stages/Tournament.def;
+stages/City_Temple.def;
+stages/tufflep.def;
+stages/Baba_Arena.def;
+stages/korin.def;
+stages/namek.def;
+stages/CellGameUB.def;
+stages/roomofspaceandtime.def;
+stages/ruins.def;
+stages/dbz_dead_zone.def;
+stages/SnakewayN.def;
+stages/dbz_kame_house.def;
+stages/Earth1.def;
+stages/earth-the-night.def;
+stages/Kamis_Lookout.def;
+stages/Rocknroll.def;
+stages/caminho_da_serpente.def;
+stages/cataract.def;
+stages/PlanetaKaioshin.def;
+stages/Planet_Gods_Goku.def;
+stages/Piccolo_Waterfall.def;
+stages/Shenron.def;
+stages/karintemple.def;
+stages/road.def;
+stages/dbz_alife_tourn.def;
+stages/Namek-Destruido.def;
+stages/Storm2.def;
+stages/rocky_mountain.def;
+stages/dbz_tree_of_might.def;
+stages/Babidi_Ship.def;
+stages/Janemba_Stage.def;
+stages/New_Tuffle_Planet.def;
+stages/frieza_spaceship.def;
+stages/Destruction.def;
+stages/Giant_Plants.def;
+stages/Planet_Zun.def;
+stages/Ice_dbz.def;
+
+
+;---------------------------------------------------------------------
+[Options]
+ ;Here you set the maximum number of matches to fight before game ends
+ ;in Arcade Mode. The first number is the number of matches against
+ ;characters with order=1, followed by order=2 and order=3 respectively.
+ ;For example, for 4,3,1 you will fight up to 4 randomly-picked
+ ;characters who have order=1, followed by 3 with order=2 and 1 with
+ ;order=3.
+arcade.maxmatches = 10
+
+
+ ;Maximum number of matches to fight before game ends in Team Mode.
+ ;Like arcade.maxmatches, but applies to Team Battle.
+team.maxmatches = 10
+
+team.arcade.maxmatches = 10
+team.versus.maxmatches = 10

@@ -1,0 +1,279 @@
+; Stage Created by an Innovatee
+; Zgteam
+; A bright summers day on earth ^^
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;--------------------------------------------------------
+[Info]
+name = "Earth DayTime"
+;--------------------------------------------------------
+
+[Camera]
+ 
+startx = 0
+starty = 0
+boundleft = -600
+boundright = 600
+boundhigh = -350
+boundlow = 0
+verticalfollow = 1
+floortension = 55
+tension = 70
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -70          
+p1starty = 00            
+p1startz = 0            
+p1facing = 1            
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;--- Common ---
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0     
+botbound  =  0     
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50      
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound] 
+screenleft = 15    
+screenright = 15   
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 0
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 128,128,128
+yscale = .3
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/dbz_vegeta.ogg
+bgvolume = 255
+
+;--------------------------------------------------------
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[BGdef]
+ ;Filename of sprite data
+spr = stages/earth1.sff
+debugbg = 0
+;----------
+[BG sky]
+type  = normal
+spriteno = 0,0
+layerno = 0                
+tile  = 1, 1
+tilespacing = 0,0
+;----------
+[BG bgr]
+type  = normal
+spriteno = 0, 1
+layerno = 0                
+start = 0, 30
+delta = 1, 0.8
+trans = none
+tile  = 1, 0
+;----------
+[BG Basiccloud]
+type  = Normal
+spriteno = 0, 2
+layerno = 0                
+start = 0, -150
+delta = .8, 0.8
+trans = add
+tile=1,0
+velocity = 0.1,0
+;----------
+[BG Csun]
+type = Normal
+spriteno = 3, 0
+layerno = 1                
+start = -300, -180
+delta = .8,.8
+trans= add
+;----------
+[BG Cloud2]
+type = Normal
+spriteno = 0, 4
+layerno = 0                
+start = -400, -30
+delta = .8,0.8
+tile  = 1, 0
+velocity= .8,0
+trans= add
+tilespacing= 300,0
+;----------
+[BG floor]
+type = Normal
+spriteno = 0, 3
+layerno = 0                
+start = 0, 30
+mask = 1
+delta = 1,0.8
+tile  = 1, 0
+;;----------
+[BG Cloud2]
+type = Normal
+spriteno = 0, 4
+layerno = 0                
+start = -400, 20
+delta = .8,0.8
+tile  = 1, 0
+velocity= .5,0
+trans= add
+tilespacing= 300,0
+;----------
+[BG Cloud3]
+type = Normal
+spriteno = 0, 6
+layerno = 1                
+start = -300, -20
+delta = .8,0.8
+tile  = 1, 0
+velocity= .3,0
+trans= add
+tilespacing= 500,0
+;----------
+[BG Cloud3]
+type = Normal
+spriteno = 0, 6
+layerno = 1                
+start = -300, 0
+delta = .8,0.8
+tile  = 1, 0
+velocity= .7,0
+trans= add
+tilespacing= 700,0
+;;;----------
+[BG Cloud2]
+type = Normal
+spriteno = 0, 4
+layerno = 0                
+start = -400, 20
+delta = .8,0.8
+tile  = 1, 0
+velocity= .8,0
+trans= add
+
+;----------
+[BG Cloud3]
+type = Normal
+spriteno = 0, 6
+layerno = 0                
+start = -300, -30
+delta = .8,0.8
+tile  = 1, 0
+velocity= .3,0
+trans= add
+tilespacing= 500,0
+;----------
+;Thanks samus
+[BG sqrl]
+type = anim
+actionno = 1
+start = -10,30
+delat = 1, 0.8
+
+[Begin Action 1]
+1,0,0,0,50
+1,1,0,0,3
+1,2,0,0,3
+1,1,20,0,3
+1,2,20,0,3
+1,1,40,0,3
+1,2,40,0,3
+1,1,60,0,3
+1,2,60,0,3
+1,1,70,0,3
+1,2,70,0,3
+1,1,80,0,3
+1,2,80,0,3
+1,1,100,0,3
+1,2,100,0,3
+1,1,120,0,3
+1,2,120,0,3
+1,1,140,0,3
+1,2,140,0,3
+1,1,160,0,3
+1,2,160,0,3
+loopstart
+1,2,2000,2000,0,3
+;----------
+[BG ground dust]
+type = normal
+spriteno = 2,1
+start = 170, 150
+velocity = 4,0
+trans = add
+tile = 1,0
+tilespacing = 600
+;----------
+[BG ground dust2]
+type = normal
+spriteno = 2,1
+start = 170, 125
+velocity = 5,0
+trans = add
+tile = 1,0
+tilespacing = 800
+layerno = 1
+;----------
+[BG ground dust]
+type = normal
+spriteno = 2,1
+start = 0, 165
+velocity = 3,0
+trans = add
+tile = 1,0
+tilespacing = 1000
+;----------
+[BG ground dust2]
+type = normal
+spriteno = 2,1
+start = 120, 170
+velocity = 6,0
+trans = add
+tile = 1,0
+tilespacing = 2000
+layerno = 1
+;----------
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

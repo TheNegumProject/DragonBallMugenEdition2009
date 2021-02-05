@@ -1,0 +1,43 @@
+;|=================================================|;
+;|    	    BOO COPYCAT BY COPYCAT	   |;
+;|=================================================|;
+
+;|=================================================|;
+[Info]
+name         ="BOO COPYCAT"        
+displayname  ="Evil Buu"
+mugenversion =04,14,2001   			   
+author       ="COPYCAT"    
+pal.defaults =1,2,3,4,5,6
+versiondate=7/8/2008
+;==================================================|;
+
+;==================================================|;
+;Archivos requeridos, por favor no muevas nada....
+[Files]
+cmd         =comandos.cmd  
+cns         =constantes.cns   
+st          =constantes.cns 
+;st1         = ia.cns
+stcommon    =common1.cns
+sprite      =imagenes.sff   
+anim        =animaciones.air
+
+
+
+sound       =sonidos.snd   
+pal1=boo.act
+;==================================================|;
+                      [Arcade]	
+intro.storyboard=
+ending.storyboard=
+                      
+;|=================[ Arcade mode ]=================|;      
+;|	    intro.storyboard = intro.def           |;
+;|	    ending.storyboard = ending.def	   |;
+;|=================================================|;
+	    
+;|=================================================|;
+;|	   	http://neom.studiosmh.com   	   |;
+;|      metalicwarrior@hotmail.com --> @ndroide	   |;
+;|=================================================|;

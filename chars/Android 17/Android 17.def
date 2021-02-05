@@ -1,0 +1,22 @@
+[Info]
+name="Android 17"
+displayname="Android 17"
+author=""
+pal.defaults=1
+versiondate=8/15/2008
+mugenversion=
+
+; Files for the player
+[Files]
+cmd=and17.cmd
+cns=and17.cns
+st=and17.cns
+stcommon=common1.cns
+sprite=and17.sff
+anim=and17.air
+sound=and17.snd
+pal1=and17_1.act
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

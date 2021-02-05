@@ -1,0 +1,165 @@
+;author = stig87
+;name = Tree of Might
+;Date = 11-16-07
+;email = b_blue34@yahoo.com
+;Mugendream.bravehost.com
+;Mugendream.angelfire.com
+
+
+
+
+[Info]
+name = "Tree of Might"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -500
+boundright = 500
+boundhigh = -200
+boundlow = 0
+verticalfollow = .7
+floortension = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -80         
+p1starty = 0           
+p1startz = 0            
+p1facing = 1           
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -900 
+rightbound =  900
+topbound  =  0    
+botbound  =  0     
+
+[Scaling]
+topz     = 0       
+botz     = 50      
+topscale = 1      
+botscale = 1.2     
+
+[Bound]
+screenleft = 15    
+screenright = 15
+
+[Music]
+bgmusic =sound/might.mp3
+bgvolume =255 
+
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 96,96,96
+yscale = .1
+reflect = 0
+intensity = 10
+
+[Reflection]
+intensity = 0
+
+[BGdef]
+spr =stages/dbz_tree_of_might.sff
+debug=0
+debugbg=0
+
+
+[BG Background]
+type  = normal
+spriteno = 0,0
+start = 0, -15
+delta = .4, .55
+mask = 0
+
+
+
+[BG dude]
+type  = normal
+spriteno = 3,1              
+start = 0, -15
+delta = .45,.7
+trans = none
+mask  = 1
+tile  = 0, 0
+tilespacing = 0,0
+
+
+
+[BG dude]
+type  = normal
+spriteno = 3,0              
+start = 0, -15
+delta = .45,.7
+trans = none
+mask  = 1
+tile  = 0, 0
+tilespacing = 0,0
+
+[BG ki]
+type  = anim
+actionno = 1              
+start = 0, -15
+delta = .45,.7
+trans = none
+mask  = 1
+tile  = 0, 0
+tilespacing = 0,0
+
+
+
+[BG Tree]
+type  = normal
+spriteno = 2,0              
+start = 0, -15
+delta = .45,.7
+trans = none
+mask  = 1
+tile  = 0, 0
+tilespacing = 0,0
+
+
+
+[BG Ground]
+type  = normal
+spriteno = 1,0              
+start = 0, -15
+delta = 1,1
+trans = none
+mask  = 1
+tile  = 0, 0
+tilespacing = 0,0
+
+[BgCtrlDef]
+looptime = 3000
+CtrlID = 8
+
+[BgCtrl]
+type = VelSet
+time = 1
+x = 3
+
+[BgCtrl]
+type = PosSet
+time = 1100
+x = 0
+
+[Begin action 1]
+4,0, 0,0, 8
+4,1, 0,2, 8
+4,2, 0,4, 8
+4,1, 0,6, 8
+4,0, 0,8, 8
+4,1, 0,10, 8
+4,2, 0,12, 8
+4,1, 0,10, 8
+4,0, 0,8, 8
+4,1, 0,6, 8
+4,2, 0,4, 8
+4,1, 0,2, 8
+

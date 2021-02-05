@@ -1,0 +1,23 @@
+
+[Info]
+name    ="Goten88"
+displayname ="Goten kid"
+versiondate =12,15,2004
+authorname = "Pextin, Toad & Maybe Redneck"
+pal.defaults =1
+mugenversion=
+author=""
+
+[Files]
+cmd      =Goten.cmd
+cns      =Goten.cns
+st       =Goten.cns
+stcommon =common1.cns
+sprite   =Goten.sff
+anim     =Goten.air
+sound    =Goten.snd
+pal1=Goten.act
+st1=AI.cns
+[Arcade]
+intro.storyboard=
+ending.storyboard=

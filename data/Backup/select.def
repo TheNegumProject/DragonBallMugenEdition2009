@@ -1,0 +1,136 @@
+;---------------------------------------------------------------------
+[Characters]
+==blank. portrait area==
+==blank. portrait area==
+==blank. portrait area==
+==blank. portrait area==
+DB, stages/torre-de-karin.def;
+Krillin, stages/tenkaichi.def;
+yamcha3sb3, stages/dbaa_piccolo.def;
+Tien, stages/dbaa_piccolo.def;
+Chiaotzu, stages/new-budoukai-hd.def;
+Taopaipai, stages/korin;
+goku-NEX, stages/new-budoukai-hd.def;
+ _____________________________________________
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|_____________________________________________|
+PiccoloDOS, stages/new-budoukai-hd.def;
+Freeza, stages/namekdes-md.def;
+Ftrunks-b, stages/Future.def;
+and17, stages/cataract.def;
+Cell-Jr, stages/Jogocell.def;
+cell, stages/CellGameUB.def;
+SuperNamek, stages/namekdes-md.def;
+ _____________________________________________
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|_____________________________________________|
+USSPV, stages/power.def;
+gohanex, stages/Jogocell.def;
+Gohan-SSJ2, stages/CellGameUB.def;
+Trunks, stages/Jogocell.def;
+ssj2-goku, stages/Budokai-sunset.def;
+SSJ2-MAJIN-VEGETA, stages/Budokai-sunset.def;
+majinboo, stages/sb2snowfield.def;
+ _____________________________________________
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|_____________________________________________|
+Gohan2 tien, stages/estrada-dbz1.def;
+boo copycat, stages/skyhd.def;
+Super Saiyajin, stages/skyhd2.def;
+ _____________________________________________
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|_____________________________________________|
+Gotenks-SSJ, stages/saladotempo-md.def;
+AGoku, random;
+Vegetto, random;
+Goku-SSJ2, random;
+son goku, random;
+Trunkz, stages/Budokai-sunset.def;
+Goten, stages/Budokai-sunset.def;
+ _____________________________________________
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|_____________________________________________|
+fusion, random;
+ultimatgoku, random, Order=10;
+Teen Gohan, random;
+Vegeta Extreme, random, Order=9;
+ss4vegeta, random, Order=10;
+Bojack, random, Order=9;
+Recoome, random, Order=9;
+ _____________________________________________
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|_____________________________________________|
+Goku San, random, Order=10;
+bardock, random;
+broli, random, Order=10;
+chibipan, random;
+VegetaGT, random, Order=9;
+dbzgt, random, Order=6;
+randomselect;
+ _____________________________________________
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|_____________________________________________|
+SSJ4VegetaSVC, random;
+Goku, random;
+Cell1, random;
+shinbuu, random;
+JssGohan, random;
+Goku ssj5, random;
+Mistic_Gohan, random;
+ _____________________________________________
+|         DO NOT REMOVE THIS BOX              |
+|            (CPU characters)                 |
+|_____________________________________________|
+kwhale, random, Order=10;
+Kraken, random, Order=10;
+==Miejsce na twoj¹ ukryt¹ postaæ==
+==Miejsce na twoj¹ ukryt¹ postaæ==
+==Miejsce na twoj¹ ukryt¹ postaæ==
+==Miejsce na twoj¹ ukryt¹ postaæ==
+==Miejsce na twoj¹ ukryt¹ postaæ==
+;-----------------------
+[ExtraStages]
+stages/Budokai-sunset.def;
+stages/tufflep.def;
+stages/Baba Arena.def;
+stages/budoukai-hd.def;
+stages/cellarena.def;
+stages/estrada-dbz1.def;
+stages/kaio.def;
+stages/kamisama-n.def;
+stages/korin.def;
+stages/localdetreino-dbz1.def;
+stages/nuvem.def;
+stages/power.def;
+stages/praia.def;
+stages/satan.def;
+stages/sb3dcloud.def;
+stages/skyhd.def;
+stages/skyhd2.def;
+stages/skyhd3.def;
+stages/tenkaichi.def;
+stages/vegettobudoukai.def;
+stages/dbaa_piccolo.def;
+stages/plant.def;
+stages/pianeta-kaioshin.def;
+stages/namek.def;
+stages/Future.def;
+stages/new-budoukai-hd.def;
+stages/CellGameUB.def;
+stages/penhasco.def;
+stages/Videlbg.def;
+stages/ruins.def;
+stages/cataract.def;
+stages/sb2snowfield.def;
+
+;---------------------------------------------------------------------
+[Options]
+arcade.maxmatches = 4,2,3,2,0,0,0,1,0,0
+team.maxmatches = 4,1,1,0,0,0,0,0,0,0

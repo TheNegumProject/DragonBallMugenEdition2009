@@ -1,0 +1,122 @@
+S-ZANGIA REMAKE BY SAIKYO - SAWWEN
+
+/////////////////////////////////////////////////////////////////////////////
+
+UPDATES DEL CHAR - REMAKE -
+
+1) Nuevos Sprites hechos por Saikyo, mucho mejores que los anteriores!!
+2) Pasados los Combos automaticos a Manuales!!
+3) Cambiado varios Fx viejos, puestos Nuevos Fx.
+4) Agregados Nuevos Ataques simples y dos nuevos Supers.
+5) Creadas varias Paletas para jugar de a varios.
+6) Agregado Sonidos a Intros, algunos Ataques, golpes, etc.
+7) Mejorada la Jugabilidad del Char en general.
+8) Mejorados los comandos del Char para un uso mas practico.
+8) Puesto nuevos Movimientos aleatorios (Super salto, Slash, Taunt etc)
+9) Mejorado el Fly y el Run simples .
+10) Nueva Stand Cortesia de Iee.
+11) Nuevos Portraits Chico y Grande para darle calidad :P
+12) Muchos otros arreglos menores que no recuerdo ^^
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+Programación Editada     : SaWWeN
+Sheet                    : Saikyo
+Dialogos Ingles          : Mv y Finalblast 
+Version                  : Remake
+
+;----------------------------------------------------------------------------
+
+MI correo: fa77out@hotmail.com
+MI Blog/Mugen: http://shenlong7.blogspot.com/
+Foro Pocket: http://dbzpocketmugen.activoforo.com/
+
+////////////////////////////////////////////////////////////////////////////
+
+
+GOLPES NORMALES:
+
+A boton      : puño debil
+B boton      : Codazo
+C boton      : Gancho
+X boton      : patada media
+Y boton      : patada alta
+
+Z boton      : Zanzoken
+
+adelante      : caminar adelante
+atras         : caminar atras
+arriba        : saltar
+abajo         : agacharse
+
+Start button  : jajaja :P
+
+
+////////////////////////////////////////////////////////////////////////////
+
+-------|Basicos|---------------------------------------------------
+
+Correr hacia adelante: adelante x2
+Salto hacia atras:     atras x2
+Cargar Ki:             a+x
+Vuelo:                 b+y 
+Vuelo Slash:           8 diferentes direcciones (Base del code by Mugenfan)
+Super Salto:           D, U
+
+-------|Especiales, Combos y Golpes |------------------------------------------------
+
+
+Energy Zan             DF, F, x
+
+Laser                  DF, F, y
+
+Sharp Shooter          DF, F, a
+
+Slash Liner            DF, F, b
+
+Super Combo            DF, F, c
+
+Sliding Uppercut       DB, B, a
+
+Sommersault Splash     DB, B, b
+
+Sky Zapper             DB, B, c
+
+Diving Kick            DF, F, x
+
+Fireball               DB, B, x o y
+
+-------| Supers |--------------------------------------------------
+
+Shoot Blaster      DB, B, F, x+y o y+z (3 Direcciones)
+
+kridead            DB, B, F, a
+
+renzoku            DB, B, F, b
+
+super hilos        DB, B, F, c
+
+
+-------------------------------------------------------------------
+
+Agradecimientos:
+
+1) A mi Y Saikyo por darnos el tiempo de hacer este Remake.
+2) Sawady por remakear muchos de los Fx y agregar otros. 
+3) El aura gracias a Mugenfan/Ippo y Cheba por un fx del charge
+4) Chrono strife por algunos codes de su autoria que utilize (charge y fireball)
+5) Todos aquellos que les guste y que vean que no es dificil hacer un buen remake.
+
+
+Agradecimientos Especiales:
+
+1) ElectByte y Bandai.
+ 
+
+----------------------------->
+Fuck you:
+
+1) Todos aquellos egoistas que dicen no al open source y si a la muerte del mugen.
+
+----------------------------->

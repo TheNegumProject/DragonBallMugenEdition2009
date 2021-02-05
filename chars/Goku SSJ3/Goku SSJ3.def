@@ -1,0 +1,35 @@
+; Definition file for GOKU SSJ 3
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="SSJ2-GOKU by BARDOCK"     
+displayname ="Goku SSJ3" 
+versiondate =5,2,2007    
+mugenversion =06,14,2003   
+author ="FRS GAMES & Bardock"         
+pal.defaults =       
+
+; Files for the player
+[Files]
+cmd     =SSJ2-GOKU.cmd
+cns     =SSJ2-GOKU.cns
+st      =SSJ2-GOKU.cns
+stcommon =SSJ2-GOKU1.cns
+sprite  =SSJ2-GOKU.sff
+anim    =SSJ2-GOKU.air
+sound   =SSJ2-GOKU.snd
+pal1=SSJ2-GOKU1.act
+st1=defesa.cns
+st2=seq-teste.cns
+st3=aura.cns
+
+[Arcade]
+intro.storyboard= 
+ending.storyboard=final/final.def
+;...........................................................................................
+
+
+;                              Autor: FRS GAMES >Franciynaldo
+;[[[[[[[[[[[[[[[[[[[[[[[[[[[[E-mail: superkakarotto@hotmail.com]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+;[[[[[[[[[[[[[[[[[[[[[[[[[[[[E-mail: bardock1533@yahoo.com.br  ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]

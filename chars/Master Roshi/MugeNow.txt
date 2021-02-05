@@ -1,0 +1,112 @@
++====================================================+
+|   _    _                    _    _		     |
+|  | \__/ |_   _  ____  ____ | \  | | ___  _     _   |T
+|  |      | | | |/ ___|/ __ \|  \ | |/ _ \| |   | |  |H
+|  | |\/| | | | | |  _|  ___/| \ \| | | | | |/\\| |  |E
+|  | |  | | |_| | |_| | |___ | |\ \ | |_| | / /\  |  |
+|  |_|  |_|\____|\____|\____||_| \__|\___/|__/  |_|  |G
+|						     |R
+|  =============--- Dragon Ball Z ---==============  |E
+|  ============--- M.U.G.E.N. PAGE ---=============  |A
+| 						     |T
++====================================================+
+| Dragon Ball Z - Personagens para o M.U.G.E.N.      |O
++====================================================+R
+| NOME: Mestre Kame		                     |I
++====================================================+G
+| VERSÃO: 1.3 - 80% - (FIX 1)                        |I
++====================================================+N
+| VERSÃO do MUGEN: BETA 2000.06.27                   |A
++====================================================+L
+| Data da Versão: 15 de Agosto de 2000               | 
++====================================================+D
+| Produzido por EmuBoarding                          |B
+| Riped: EmuBoarding                                 |Z
+| Riped Game: Dragon Ball Z Ultimate Battle 27       |
+| Edição de Imagens: EmuBoarding                     |C
+| Logos: EmuBoarding    		             |H
+| Emulador usado: PSEMU (The Best for riping)        |A
++====================================================+R
+| Agradecimentos: 				     |A
+| 					             |C
+| 1ª A Bandai por ter feito os jogos da série DBZ.   |T
+| 2ª A Elecbyte (c)2000 por desenvolvimento do       |E
+| incomparavel M.U.G.E.N.			     |R
+| 3º kuzu-bei - Pelo movimento de vôo. 		     |S
+| 4º Moyashi - Pelo belo Magin Vegeta, da onde tirei |
+| o kamehame-ha do kurilin. 			     |
+| 5º E toda galera da MUGEN Eleven.  		     |			     
++====================================================+
+| Nossas HP's:       				     |
+| http://www.mugenow.cjb.net - MugeNow - Home Page   |
+| htt://garounow.hpg.com.br - Link 2 for MugeNow HP  |
+| http://www.mugen11.com - Mugen Eleven - Home Page  |
++====================================================+
+| E-Mail da MugeNow: emuboarding@ieg.com.br          |
++====================================================+
+| Como instalar???				     |
+|						     |
+| É Fácil, apenas descompacte os arquivos para a sua |
+| pasta "chars" com uma nova pasta "kame" ex:        |
+| "chars\kame" depois entre na pasta "data e edite   |
+| o arquivo "select.def" e em "CHARACTERS" adicione  |
+| a linha:					     |
+|						     | 
+| kame, stages\????.def                              | 
+|			                             |
+| ou apenas				             |
+|					             |
+| kame,        				             |
+|       	                                     |
+| Fácil não? :)			  	             | 
++====================================================+
+| Golpes do Mestre Kame: 		             |
++----------------------------------------------------+
+| SIGLAS:					     |		
+| 						     |
+| B   = Baixo					     |
+| DIE = Diagonal Inferior Esquerda		     |
+| DID = Diagonal Inferior Direita		     |
+| E   = Esquerda			             |
+| D   = Direita					     |
+| C   = Cima					     |
+| DSE = Diagonal Superior Esquerda		     |
+| DSD = Diagonal Superior Direita		     |
++----------------------------------------------------+ 
+| GOLPES NORMAIS:				     |
+|						     |
+| a - Soco Fraco				     |
+| b - Soco Medio				     |
+| c - Soco Forte				     |
+| x - Chute Fraco				     |
+| y - Chute Medio				     |
+| z - Chute Forte				     |
+| a + b - Carregar Power Bar			     |
+| s - Provocação                                     |
++----------------------------------------------------+ 
+| ESPECIAIS:					     |
+|  						     |
+| FireBall: B, DID, D + c			     |
+| Teleport A: E,B, DIE + a			     |
+| Teleport B: E,B, DIE + b			     |
+| Teleport X: E,B, DIE + x			     |
+| Teleport Y: E,B, DIE + y			     |
++----------------------------------------------------+
+| SUPERS:					     |
+|						     |
+| Kamehame-Ha: B, E, D + a (Level 1)                 |
+| Maximo-Power Kamehame-Ha: B, E, D + b (Level 2)    |
++====================================================+
+| Proxima versão:				     |
+|				                     |
+| A maioria dos golpes originais.                    |
++====================================================+
+| Comentários:					     |
+|						     |
+| Ta como despedida da Velha versão do MUGEN! :)     |
++====================================================+
+| Mugen RulezForever!!!!! :)			     |
+| Dragon Ball's RulezForever!!! :D 		     |
++=================================+==================+
+				  |TXT By EmuBoarding|
+				  +==================+	

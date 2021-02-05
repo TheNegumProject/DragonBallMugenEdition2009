@@ -1,0 +1,247 @@
+__________________________________________________________________________________________ 
+Androide 17 Versión 2.0  (Remake from "AND_17 by Hyperiox") By todos los que juegan mugen|
+------------------------------------------------------------------------------------------
+
+
+________________________________
+	Acerca del Char Remaked |
+--------------------------------
+este char está rehecho sobre el Android 17 que en el año 2003 había realizado Hyperion X.
+en esta web es posible descargar la versión 1.1 de ese autor:
+http://hyperionx.net/
+los sprites que había utilizado eran de Dark Vegeta (o "lonewolf", que es otro de usu nicks). Sobre esos mismos spites 
+trabaje yo, para luego ir editando y llegar a unos nuevos.
+
+Para los tiempos que corren y la calidad de los chars actuales,  el viejo char de Hyperion X quedaba atrasado, con pocos
+movimientos, y demasiado simple comparado con otros chars que actualmente se producen.
+Contrariamente a lo que algunos piensan, estos combios que hice sobre el char, no signican que a mi mo me gustó el trabajo
+de Hiperio X, o que no lo aprecio. Muy por el cotrario, yo aprecio mucho su trabajo y el de Dark Vegeta haciendo los 
+sprites de Android 17 sobre trunks, y por ello Hice un remake de su char. Si yo no lo apreciara, y no lo considerara bueno, 
+simplmente no retomaria sus trabajos de para lograr este char.
+Simplemente lo que muestra este char, es las exelentes posibildides que ofrece internet para copartir trabajos, aun sin 
+conocernos, y para que otros mejoern el trabajo nuestro en tiempos futuros.
+
+este remake se basa en un cambio total en la programación. Inicialmente comencé a retocar los states y animaciones existentes
+en la versión 1.1 de Hyperion X, porque no pensaba que el cambio que le haría sería tan profundo. De modo que, si bien el char
+puede conservar algunos de los números de states, y animaciones, todo el estilo de golpes normales, los sonidos, los sparks,
+y los FX, fueron cambiados. Eso en lo que respecta a los golpes normales. 
+En lo repferente a los comands, los specials, y los supers, toda la programación es nueva.
+
+dentro de este mismo char, se adjunta en el archivo "And17_by Hyperion X.rar" el char realizado por ese autor para
+que puedan constatarse los cambios y revisar los créditos.
+     
+  
+________________________________
+	reflexiones propias	|
+--------------------------------
+
+
+Bueno, también quiero decir que en los chars que elijo para hacer trato de que sean chars que todavía no estén hechos o que, 
+si lo están, tienen una jugabilidad que poco se acerca a la clásica del Super Butoden, que es la que más me gusta. 
+Así elijo mis proyectos de acuerdo con lo que me apasione y a lo que no esté hecho (o no muy parecido a los Butoden).
+
+
+Se trata de jugabilidades distintas y de formas distintas de ver, entender, y sentir la pasión por Dragon Ball. No por esta 
+diferencia se está compitiendo, sino, simplmenete, aportando algo distinto tratando de hacerlo lo mejor posible, para 
+disfrute y crecimiento de toda la comunidad MUGEN.
+
+este es mi tercer char y espero que más fans de Dragon Ball se entusiasmen en la programación MUGEN.
+el trabajo de cada uno de nosotros es de los demás también. Enrriquecamosnos del esfuerzo de todos. Si alguien hace sprites
+de calidad para el uso de todos, cualquier persona que quiera hacer un char no tiene que empezar desde cero, y por lo tanto 
+le resulta más fácil comenzar y terminar un proyecto de calidad. 
+
+Si por el contrario se le ponen restrcciones a los chars, cada persona que quiera adentrarse en la creción de chars tiene 
+el costo previo del "permiso de autor" (siempre y cuando lo obtenga), para publicar su char. Es obvio que cada persona puede
+cambiar, editar, transformar y borrar la información que tenga en su PC.... pero en algunos sites y foros se impone esta
+restricción ("llamado permiso de autor") para publicar obras deribadas de producciones con código abierto. 
+
+La argumentación que se usa para exigir este "premiso/autorización  de autor" es: "Hay que respetar a los autores 
+porque si sienten que no se los repeta, dejarán de hacer chars y nos prejudicamos nosotros mismos". Es un argumento muy 
+discutible. 
+
+En principio este argumento junta la idea de "respeto" con la delegación de autoridad a la persona que haya hecho tal o cual
+char. Es decir que, según tal argumento, los llamados "creadores" (como si fueran marcianos superdotados, o que otras 
+personas no pueden aprender a programar) tienen el poder de decición para decir qué se usa y qué no... algo que
+tecnológicamente es ridículo, porque en nuestras PCs podemos cambiar lo que queramos, mas allá si alguien quiere o no. Por
+lo tanto, sólo queda el obstáculo social-discursivo para que cualquier persona pueda producir y publicar libremente
+sus personajes MUGEN que haga. Esta restricción sólo puede aplicarse a la publicación (porque la producción ya se encuentra
+posibilitada por el código abierto de los chars) y habitualente se impone en los foros o sites, vía los administradores
+de tales webs. Esta es la idea restrictiva del "respeto": entendida como autoridad.
+
+Si en cambio, entendemos al respeto como el reconocimiento al trabajo de otros, entonces es otra cosa. Dar una palmada en la 
+espalda y decir "che, muy buen laburo" es lo mejor que podemos hacer para reconocer el esfuerzo de otros. Si se pudiera 
+hacer en persona (cara a cara), yo mismo lo haría. Pero vía Internet, se bien que una "cyber palmada" puede resultar un poco 
+fría.... deberemos acostumbrarnos a eso o hacer encuentros personales de gente que programa o quiere aprender a programar 
+chars MUGEN, si de generar relaciones más fraternas es lo que se trata de hacer. Bajo ningún punto de vista imponer autoridad
+sobre otros (como decir "esos cuantos pixeles son míos y no los presto") nos puede llevar a generar lazos más fraternos, si
+no todo lo contrario.
+ 
+Bueno, haciendo caso a este principio de respeto que se basa en felicitar al las personas por su ezfuerzo (pero no en darles
+autoriadad para decidir qué se usa y qué no), he de agradecer los sprites open que Neocide hizo del personaje Capitan Ginew. 
+Más o menos, la mitad de los sprites son los que él hizo. El resto los hice yo mismo 
+
+
+ahora se detallan los movimientos y luego paso a los agradecimientos más formalmente.
+
+__________________________________
+
+
+
+________________________________________________________________
+		LISTA DE MOVIMIENTOS				|
+----------------------------------------------------------------
+
+
+Movimientos Nomales:
+--------------------
+
+- teleport (o "zanzoken") = z (-400 power)
+
+- "Super Jump" = ~D, U
+
+- "fly" = a+b
+
+
+Movimientos "Comands":
+----------------------
+- "Grulla" = F + a 
+
+
+Movimientos especiales:
+-----------------------
+
+- "Knee" = F, D, DF + a
+
+- "Dash Punch" = D, DB, B + y
+
+- "Dash Uppercut" = D, DB, B + x
+
+- "Dash Air Kick" = D, DB, B + a (En el AIRE)
+
+- "Desesperation combo" = F, DF, D, DB, B +, b (uede sen en el piso como en el aire)
+
+
+Movimientos de Energía
+-----------------
+
+- "Fireball" = c [Energía -50]
+
+- "RR Shield" = x+y
+
+- "Energy Explosion" = F, DF, D, DB, B + c [Energía -400]
+
+- "Back Shot" = D, DB, B + c [Energía -400]
+
+[la ENERGÍA (o "power") se va recargando sola de a poco]
+
+
+Movimientos Supers
+-------------------
+
+- "Energy Fireball" = D, DB, B, F + c [Energía -1000]
+
+- "Shock Wave" = D, DB, B, D, DB, B + c [Energía -1000, hace 100 puntos de daño y paraliza]
+
+- "Shock Volt" = D, DF, F, D, DF, F + c [Energía -2000]
+[mientras la bola está en el aire, pega como la "Energy Fireball", 
+y si toca el piso se divide en dos "Shock Wave" hacia ambos lados]
+
+- "RR MasiveBall Shield" = D, DB, B, D, DB, B, x+y [Energía -3000]
+
+________________________________________________________________
+			AGRADECIMIENTOS				|
+----------------------------------------------------------------
+
+Ahora sí, paso a los agradecimientos. 
+
+Primero que nada, Hyperion X y a Dark Vegeta. Sus trabajos en sprites fueron fundamentales. Sin ello, yo no podría haber
+hecho el resto. Sin dudas un excelente trabajo que me sirvió a mi para llegar a esta versió n de Androide 17. 
+
+A Electbyte, por haber inventado esta maravilla llamada MUGEN. Gracias a ello ahora los fans, podemos aprovechar lo hecho por
+las companías de juegos de peleas (ya sean SNK, CAPCOM, BANDAI, etc) para producir de forma libre los chars que nos gusten, 
+como queramos, sin competencia entre nosotros los fans, y (mejor que nada) sin rendirles cuentas a los interesados en fines
+de lucro.
+
+Las ya mencionados compañías, hoy resultan burladas por las vías de internet, el trabajo compartido, y la unión libre y 
+fraterna... de más está decir que por esta "burla a las compañías" (por así decirlo) no se terminaron los juegos de peleas, 
+ni Dragon Ball, ni nada parecido.... muy por el contrario ahora tenemos ese furuto desarrollo en nuestras manos y lo podemos 
+llevar a nuestro gusto libremente elegido, en vez de estar esperando año a año los nuevos lanzamientos comerciales.
+
+El futuro de los juegos de peleas ahora está en nuestras manos. GRACIAS  M U G E N  POR ELLO!!!!
+
+
+
+________________________
+	Derechos	|
+------------------------
+
+en lo que respecta al uso del char, lamentablemente no puedo decir que sea open Source, aunque a mi me gustaría.
+en el caso de que alguien quiera usar este char para hacer otro, o para modificaciones, tiene que pedirle permiso Hyperion X
+en su web http://hyperionx.net/
+
+sincermaente yo aspiraba a que el permiso que me fue otorgado sea mas flexible, y que el char pudiera modificarse libremente,
+pero no usarse para hacer otro sin permiso de Hyperion X. Creo que esra opción es algo a mitad de camino entre el 
+Open Source y la exigencia de permisos. 
+De este modo, que el que se baje el char, lo disfrute... en lo que respecta a mi, la publicación del char no es más que una 
+triste derrota. Pensé que a partir del trabajo que realicé, una mayor flexibilidad sería otorgada...
+es una lástima, y no puedo decir mas que nunca más haré remakes sobre chars con permiso con la intención de publicarlos en
+foros donde se exija tal requisito, porque por más empeño que se le ponga, el premiso sigue siendo el candado que siempre ha
+sido para cualquier actividad de la vida, y aunque demuestre que cambie todo el char hasta que casi se podría decir que es 
+otro char.
+
+si bien la programación puede ser open sourse, y puede ser utilizada y copiada por cualquiera, y el resto del char no, esto 
+hace que la última palabra sobre el char la tenga Hyperion X, con lo cual el char sige siendo cerrado. 
+
+weno.. como dije, de mi parte no hay nada que festejar... solo seguir con otros trabajos.
+simplemnte publico el char, por que el permiso me vino casi sin que lo pida, y para las perosnas que solo juegan y no hacen
+no hacen chars, esto no les importa, solo se dedicaran a jugar.  
+
+a los que hacen chars, solo me queda pedirles disculpas... es algo que se dió de esta forma aunque yo no lo quise así, 
+dado que estoy en contra de los "permisos",  de cualquier restricción, y a favor del Open Source.
+
+juro que todas las cosas que haga de aquí en mas, seran Open Source. 
+
+________________________
+	Por mi          |
+------------------------
+si se preguntan quién soy o por qué en de este char no figura un "autor", es por el simple hecho de que no creo que sea 
+democrática la idea de proclamarse "autor" (como el "creador") de algo. La producción de conocimiento y de obras culturales 
+(que aunque alguien no lo quiera aceptar, MUGEN es también parte de la cultura) es algo en lo que contribuye toda la 
+sociedad, y en este caso toda la comunidad MUGEN, desde el que postéa una opinión en un foro, hasta el que hace un char pixel
+por pixel... 
+incluso tambien las compañias SNK, CAPCOM, BANDAI y tantas otras han contribuido en este char (con la simple diferencia de
+que estas últimas pretendian cobrar dinero para que uno accediera a sus producciones), a través de los movimientos y 
+gráficos que imagino a partir de las experiencias de jugar sus juegos de peleas.
+
+por lo tanto cada vivencia que he tenido en los juegos de pelea han contribuido al char, también cada parsona con la que 
+hablé de ello, y cada cosa que leí y vi al respecto... es decir que este char no es más que el resultado social de mis 
+vivencias en torno a los juegos de peleas. 
+
+si se está de acuerdo con esto que digo, la simple idea de proclamarse "autor", no puede entenderse más que como un "robo"
+a todas esas distintas producciones de otras personas y de la sociedad toda, que han influido en lo que nosotros produzcamos.
+Es decir que proclamarse "autor" (como el "creador" de algo), es simplemente poner nuestra producción por sobre todas las
+demás, sin contar que la nuestra sería imposible sin todas las demás. Algo muy despótico si se hace intencionadamente, aunque
+la mayoría de las veces no sea intencionado y es una inercia a hacer lo que los demás hacen el hecho de proclamarse autor. En
+este último caso que (reitero que es la mayoría), sería bueno que revieramos nuestros actos, en caso de que estemos deacuerdo
+con lo que opino respecto de que lo que hacemos es producto de lo que hacen otras personas. 
+
+desde luego que esto no quita el fraterno acto de agradecer a las personas que estuvieron cerca de uno en el proyecto. Tampoco
+implica que sean "déspotas" todos los que se proclamen autores, dado que esa idea es algo que nos acostumbramos a usar y a 
+pensar en función de ello, ya que extiste previamente a nosotros. Por otra parte, si considero correcto llamar déspota, a quien
+utilice tal autoproclamción de "autor", para intentar impedir que otros produzcan chars o usen materiales.  
+
+
+dicho esto, no me queda más que decir que es una expresión de deseos que las personas que tomen algo de este char tengan
+la misma actitud que yo tengo: que sus obras deribadas de este char sean de libre uso.
+no puedo ponerlo como condición restrictiva... si lo quieren usar para alimentar su ego propio (autopoclmádose "autor"
+sin ver el trabajo de los demás), yo no puedo hacer nada, ni quiero imponerle a nadie nada. Que haga eso el que quiera 
+y si puede dormir tranquilo con eso no será más que una persona miserable.
+
+
+Muchas gracias para el que haya leido esto y como siempre digo, un saluo.
+
+
+------------------------------------------
+cualquier comentario, agradecimiento, reporte de bugs, insulto, puteadas y demáses agravios, pueden ser enviados en forma
+privada a nahuelbexiga@yahoo.com.ar
+

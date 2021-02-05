@@ -1,0 +1,82 @@
+;ドラゴンボールZ　プイプイステージ
+
+;真武闘伝にプイプイはいないんですけど、なんでステージだけ？
+;つーかプイプイが出てるDBゲーあったっけ？MUGENにもいないよね？
+;そういえばこの星重力が10倍っていう設定なんだけど、MUGENでそういう設定できたら面白いよね
+;Velmul Y = 10とか。でもバグがいっぱい出てきそうだな。
+
+[Info]
+name = "Puipui's Stage"
+author = "Puipui :P"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -595
+boundright = 621
+boundhigh = -178
+boundlow = 0
+verticalfollow = .47
+floortension = 85
+tension = 20
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 205
+autoturn = 1
+resetBG = 0
+Hires = 0
+
+[Shadow]
+color = 92,92,92
+yscale = .2
+reflect = 0
+
+[Music]
+bgmusic = sound/20_flight_in_the_dark_side.ogg
+bgvolume = 255
+
+[BGdef]
+spr = stages/Planet_Zun.sff
+debugbg = 0
+
+[BG]       		
+type  = normal
+spriteno = 0, 0
+start = 0, 102;-155
+delta = 1,1
+;layerno = 0
+mask = 0
+
+[BG]       		
+type  = normal
+spriteno = 0, 1
+start = 0, -196;-155
+delta = .5,1
+;layerno = 0
+mask = 0

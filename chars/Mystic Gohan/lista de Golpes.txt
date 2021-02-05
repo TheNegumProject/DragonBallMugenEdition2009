@@ -1,0 +1,279 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===LEIA-ME===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+                                  Mistico Gohan 
+
+                                   Leia-Me em português
+
+
+===FICHA===
+nome do autor do char : Franciynaldo rock (de brasilia ceilândia) & tenshin-han
+Nome : gohan
+Anime : Dragon Ball Z 
+Versão do Mugen :06,14,2003 win mugen
+Versão : 1.0
+Completo : 100%
+Data de Lançamento : 25/2/2007
+personagem - editado
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===Programas utilizado===,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+.Fight factory
+.Photo shop 8.0
+.zsnes
+.paint
+.gravador de som do windows
+o som foi ripado do meu dbz 
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===Beta testes===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Gustavo Pinheiro email magicforever3@hotmail.com
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===novidade===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                              Ele tem inteligencia artificial
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===CRÉDITOS===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+                              Autor: FRS GAMES >Franciynaldo & tenshin-han
+                             E-mail:superkakarotto@hotmail.com 
+
+,,,,,,,,,,,,,,,,,,,,,,,===historia do personagem===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Gohan teve um duro treinamento com supremo senhor caio e conseguiu novamente ser um ssj 2 
+poderoso no fim do treinamento o goku lançou um tipo de metal muito resistente feito pelo supremo senhor caio cohan tentou rebater com a espada Z e acabou quebrando a espada Z asim ele libertou o dai kaioshin que estava preso na espada Z e como reconpensa o dai kaioshin fez um ritual que tornou gohan mais forte que nunca gohan se tornou mais forte do que o goku ssj 3 por que o ssj 3 consome muita energia e acaba se destrasformando e o mistico gohan nao tem esse problema de desgaste de energia
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===INSTALAÇÃO===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Para colocar o gohan no seu M.U.G.E.N. primeiro tenha certeza de que há espaço
+no seu System.def abrindo-o com um editor de texto(como Wordpad)e aumentando
+o número de Columns e Rows se necessário.
+Se já tiver espaço,bom.
+Mande todos os arquivos para uma pasta de nome Gohan do futuro  e coloque-a na pasta
+CHARS de seu M.U.G.E.N.
+Agora, entre no arquivo Select.def e procure por uma parte com [Characters]
+escrito.
+Logo embaixo escreva:
+Mistico Gohan (se quiser que ele esteja no seu jogo)
+Mistico Gohan, stages/estagio.def (se quiser que ele tenha uma fase própria no ArcadeMode) 
+Mistico Gohan, stages/estagio.def, music=sound/nomedamusica.def (se quiser que a fase do modoArcade tenha música própria) 
+Se quiser que ela seja o último chefe de seu jogo, acrescente , order=10 logo
+após a música ou o estágio(vindo em últmo lugar),senão, coloque :, order=9
+para que esteja num nível anterior a último chefe.
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===O QUE FALTA===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                                        
+nada
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===O QUE TEM===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                                       .16 supers
+                                       .5 especiais
+                                       .Sistema de combos
+                                       .Extras
+                                       .3 poses de vitória
+                                       .3 intro
+                                       .Carregamento de ki 
+                                       . teleporte
+                                       . voo
+                                       .Muitos sons todos em portugues
+                                       .2 Paletas
+                                       . final 
+
+                                     é a versão "final"
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===Mistico Gohan===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Raça : Saiyajin
+Familiares:que morerao (bardock avô),(selipa avó), (raditz  tio)
+Familiares: (chichi mãe),(goten irmao mais novo),(pan filha),(videl esposa),( paz  cunhada), ( goku pai)
+Olhos : pretos
+Cabelo : grisalho,pretos 
+Séries :  dragon ball z 
+Diciplina: artes marciais 
+ 
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===MODOS DE JOGO===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Mistico Gohan   ele e + forte do que o ssj 3
+
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===COMANDOS===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+-------
+Legenda
+-------
+
+F - Frente
+B - Trás
+D - Baixo
+U - Cima
+DF - Baixo frente
+DB - Baixo trás
+UF - Cima frente
+UB - Cima Traz
+
+-------
+Básicos
+-------
+a - botão a chute fraco
+b - botão b chute medio
+c - botão c chute forte
+x - botão x soco fraco
+y - botão y soco medio
+z - botão z magia
+
+------
+Extras
+------
+.Balão - é só chegar perto do aponente e apertar  y 
+
+.DASH - e so apertar B,B tras F,F frente
+
+.AIR JUMP - Um pulo comum no ar em qualquer direção
+Um pulo aéreo
+
+.Sistema de Combos - Vá apertando os botões de golpes básicos rapidamente
+goku vai espancando seu inimigo do jeito que você quiser da para juntar todos os golpes com sequencia !
+
+.Super Pulo - D, U
+Um pulo mais forte e mais auto pra cima.
+
+.Super Pulo Foward- D, UF
+Um pulo mais forte e mais auto pra frente.
+
+.Super Pulo Backward- D, U
+Um pulo mais forte e mais auto pra trás.
+-------------
+CARREGAMENTOS
+-------------
+CHARGE - a+b pode ser feito no ar
+Mistico Gohan carega seu Ki.(3 barras)
+teleporte - x+a pode ser feito no ar
+voar - y+b
+upercult x+y
+provocaçao - start
+
+
+--------------------
+Golpes
+--------------------
+
+-----------
+Especiais
+----------- Ja que todo mundo olha no cmd né
+
+[Command]
+name = "brutality"  so da pra fazer quando o p2 ta com 1 de life  
+command = B,F a
+time = 100
+[Command]
+name = "FATALITY"   so da pra fazer quando o p2 ta com 1 de life  
+command = B,F x
+time = 100
+[Command]
+name = "camehameha fraco"
+command = D, DB, B, F, x
+time = 30
+[Command]
+name = "KiBeam"
+command = ~D, DB, B, F, a
+time = 30
+[Command]
+name = "sequencia forte"
+command = ~D, DB, B, F, z
+time = 30
+[Command]
+name = "gohan camehameha"
+command = D, DB, B, F ,y
+time = 30
+[Command]
+name = "gohan furioso"
+command = D, DB, B, F ,b
+time = 30
+
+;================sequencias================================
+[Command]
+name = "combo 4"
+command = D, DB, B, b
+time = 10
+[Command]
+name = "combo 5"
+command = D, DB, B,  a
+time = 10
+[Command]
+name = "kiaiho"
+command = ~D, DF, F, z
+[Command]
+name = "kiaiho2"
+command = ~D, DB, B, z
+[Command]
+name = "QCF_b"
+command = ~D, DF, F, c
+time = 10
+[Command]
+name = "porradas"
+command = D, DB, B, c
+time = 10
+[Command]
+name = "counter attack"
+command = x+y
+time = 20
+[Command]
+name = "kick"
+command = B, a
+[Command]
+name = "kick2"
+command = B, b
+[Command]
+name = "kick3"
+command = B, c
+[Command]
+name = "rafagas de puños A"
+command = x, x
+[Command]
+name = "teleporte"
+command = x+a
+time = 1
+[Command]
+name = "rafagas de puños B"
+command = y, y
+[Command]
+name = "combos consecutivos"
+command = D,F, x
+[Command]
+name = "patadas consecutivas"
+command = D,F, a
+time = 10
+[Command]
+name = "patadaerea"
+command = D, b
+time = 10
+[Command]
+name = "patadaerea2"
+command = D, a
+time = 10
+[Command]
+name = "fireball2"
+command = D, DB, B, F, a
+time = 10
+[Command]
+name = "take"
+command = D,F, b
+time = 10
+[Command]
+name = "take1"
+command = D,F, b
+time = 10
+[Command]
+name = "combo 2"
+command = ~D, DB, B, y
+time = 10
+[Command]
+name = "combo 1"
+command = ~D, DB, B, x
+time = 10
+[Command]
+name = "TELETRANSPORTACION + CODAZO"
+command = D,F, y
+time = 10
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===Algumas sequencias que podem ser feitas===,,,,,,,,,,,,,,,,,
+
+                               TEM  UM MONTE TENTEM FAZER
+                                  
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,(((((( AGRADECIMENTOS))))),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ ...e a mim mesmo por nunca desisti de fazer os chars de dbz esperem vou fazer muito mais chars melhores que esse
+ ...ao meu pc AMD ATLON 64 3800+ super veloz que me permite terminar meus personagems mais rapido
+ ...... Ao grande akira toriama criador do melhor anime do mundo db dbz e gt e os 26 filmes e ovas
+ ...  e a todos criadores de quem eu usei alguns efeitos
+ ... a bandai e a atari pelos jogos de ps2 hehehe  recomendo que joguem o dragon ball sparking neo do ps2 eu zerei 100% tem 130 personagems e d++++++++++++++++++++++++
+ ... e finalmente ao meu amigo gustavo pinheiro por me ensentiva a fazer os chars e me ajuda com um monte de coisas valeuuuu.
+ ... ao tenshin-han por te começado esse gohan
+                       
+

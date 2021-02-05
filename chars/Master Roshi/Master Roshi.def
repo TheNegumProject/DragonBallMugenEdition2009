@@ -1,0 +1,24 @@
+; Mestre Kame (1.0) def file 
+; by EmuBoarding
+; http://www.mugenow.cjb.net
+
+[Info]
+name    ="Kame by EmuBoarding"
+displayname ="Master Roshi"
+pal.defaults =1
+versiondate=7/15/2008
+mugenversion=
+author=""
+
+[Files]
+cmd     =Kame.cmd     
+cns     =Kame.cns     
+st      =Kame.cns
+stcommon =common1.cns   
+sprite  =Kame.sff      
+anim    =Kame.air      
+sound   =Kame.snd             
+pal1=kame.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=

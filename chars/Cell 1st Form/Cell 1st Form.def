@@ -1,0 +1,22 @@
+; Definition file for Insect Cell by Chrono_Strife
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name = "Insect Cell"                   ;Name of character
+displayname = "Cell 1st Form"            ;Name of character to display
+versiondate = 31,08,2007               ;Version date of character
+mugenversion = 14,06,2003              ;Version of M.U.G.E.N character works on
+author = "Chrono_Strife"               ;Character author name
+pal.defaults = 1,2,3,4,5,6             ;Default palettes in order of preference
+
+; Files for the player
+[Files]
+cmd      = ICellCMD.cmd                ;Command set
+cns      = IcellCNS.cns                ;Constants
+st       = ICellCNS.cns                ;States
+stcommon = commonCNS.cns               ;Common states
+sprite   = ICellSFF.sff                ;Sprite
+anim     = ICellAIR.air                ;Animation
+sound    = EngICellSND.snd             ;Sound
+pal1     = GreenACT.act                ;Palettes (can have up to 12)

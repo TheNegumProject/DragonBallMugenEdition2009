@@ -1,0 +1,31 @@
+;=======================================;
+;        Character Def File for:        ;
+;Android 20 by Redneck and the Masters Of The SB4;
+;     for MUGEN v. (version number)     ;
+;       Maker's Website HTTP here       ;
+;                                       ;
+;   Made with MUGEN Editing Ensemble    ;
+;     (http://ragnaroknemo.cjb.net)     ;
+;=======================================;
+
+[Info]
+name ="Android 20"
+displayname ="Dr. Gero"
+pal.defaults =1
+versiondate=8/18/2008
+mugenversion=
+author=""
+
+[Files]
+cns =Android20.cns
+cmd =Android20.cmd
+stcommon =common20.cns
+sprite =Android20.sff
+anim =Android20.air
+st =Android20.st
+sound =Android20.snd
+pal1=Android20.act
+st1=AI'n'Stuff.st
+[Arcade]
+intro.storyboard=
+ending.storyboard=

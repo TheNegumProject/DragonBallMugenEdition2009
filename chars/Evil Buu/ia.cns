@@ -1,0 +1,376 @@
+;---------------------------------------------------------------------------;
+;                          [ SelfStates override ]                          ;
+;---------------------------------------------------------------------------;
+
+;---------------------------------------------------------------------------;
+[Statedef -2]
+
+;---------------------------------------------------------------------------;
+;                               [ IA MOVE´S ]                               ;
+;---------------------------------------------------------------------------;
+[State -2:          Check IA]
+type                = Helper
+triggerall          = NumHelper(10000) = 0 
+trigger1            = var(4) && RoundState = 2
+name                = "Androide Activate"
+id                  = 10000
+stateno             = 10000
+pos                 = 500,500
+helpertype          = normal
+keyctrl             = 1
+
+[State -3, TurnBackOnAI]
+type 		    = VarSet
+trigger1	    = (RoundState = 2)
+trigger1	    = Alive
+var(4) 	    	    = 1
+
+[State -2:          AI Activation]
+type                = VarSet
+trigger1            = command = "AI_1"
+trigger2            = command = "AI_1"
+trigger3            = command = "AI_2"
+trigger4            = command = "AI_3"
+trigger5            = command = "AI_4"
+trigger6            = command = "AI_5"
+trigger7            = command = "AI_6"
+trigger8            = command = "AI_7"
+trigger9            = command = "AI_8"
+trigger10           = command = "AI_9"
+trigger11           = command = "AI_10"
+trigger12           = command = "AI_11"
+trigger13           = command = "AI_12"
+trigger14           = command = "AI_13"
+trigger15           = command = "AI_14"
+trigger16           = command = "AI_15"
+var(4)              = 1
+
+[State -2:          Random Var(1)]
+type                = VarRandom
+trigger1            = 1
+range               = 999
+v                   = 1
+ignorehitpause      = 1
+;---------------------------------------------------------------------------;
+
+;---------------------------------------------------------------------------;
+;                               [ FIRST COMBO ]                             ;
+;---------------------------------------------------------------------------;
+
+;---------------------------------------------------------------------------;
+[State -2]
+type                = ChangeState
+value               = 5210
+triggerall          = canrecover = 1
+triggerall          = (Var(4) = 1) && (random < 999) && (life > 0)
+trigger1            = (time > 30) && (stateno = 5050)
+
+[State -2]
+type                = ChangeState
+value               = 130
+triggerall          = Var(4) = 1
+triggerall          = random < 999
+triggerall          = P2movetype = A
+triggerall          = statetype != A
+triggerall          = P2statetype != C
+trigger1            = ctrl
+
+[State -2]
+type                = ChangeState
+value               = 131
+triggerall          = Var(4) = 1
+triggerall          = random < 999
+triggerall          = P2movetype = A
+triggerall          = statetype != A
+triggerall          = P2statetype = C
+trigger1            = ctrl
+
+[State -2]
+type                = ChangeState
+value               = 132
+triggerall          = Var(4) = 1
+triggerall          = random < 999
+triggerall          = P2movetype = A
+triggerall          = statetype = A
+trigger1            = ctrl
+trigger2            = stateno = 5210
+
+[State -2]
+type                = ChangeState
+value               = 152
+triggerall          = var(4) = 1
+triggerall          = Statetype != A
+triggerall          = P2statetype = C
+triggerall          = P2Movetype = A
+trigger1            = stateno = 150
+trigger2            = stateno = 151
+
+[State -2]
+type                = ChangeState
+value               = 150
+triggerall          = var(4) = 1
+triggerall          = Statetype != A
+triggerall          = P2statetype != C
+triggerall          = P2Movetype = A
+trigger1            = stateno = 152
+trigger2            = stateno = 153
+
+[State -2]
+type                = ChangeState
+value               = 150
+triggerall          = var(4) = 1
+triggerall          = Statetype != A
+triggerall          = Pos Y > -1
+triggerall          = P2statetype != C
+triggerall          = P2Movetype = A
+trigger1            = stateno = 154
+trigger2            = stateno = 155
+
+[State -2]
+type                = ChangeState
+value               = 152
+triggerall          = var(4) = 1
+triggerall          = Statetype != A
+triggerall          = Pos Y > -1
+triggerall          = P2statetype = C
+triggerall          = P2Movetype = A
+trigger1            = stateno = 154
+trigger2            = stateno = 155
+;---------------------------------------------------------------------------;
+
+;---------------------------------------------------------------------------;
+;                          [ Stand Moves IA ]                               ;
+;---------------------------------------------------------------------------;
+[State -3:          Light Punch]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = S) && (enemy,statetype != L) && (enemy,StateType != C)
+trigger1            = (P2BodyDist X <= 30 && Ctrl) && (Random <= 200)
+value               = 200
+
+[State -3:          Strong Punch Large]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = S) && (enemy,statetype != L) && (enemy,StateType != C)
+trigger1            = (P2BodyDist X <= 30 && Ctrl) && (Random <= 250)
+value               = 201
+
+[State -3:          Strong Punch Small]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = S) && (enemy,statetype != L) && (enemy,StateType != C)
+trigger1            = (P2BodyDist X <= 30 && Ctrl) && (Random <= 300)
+value               = 202
+
+[State -3:          Light Kick Large]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = S) && (enemy,statetype != L) && (enemy,StateType != C)
+trigger1            = (P2BodyDist X <= 30 && Ctrl) && (Random <= 350)
+value               = 203
+
+[State -3:          Light Kick Small]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = S) && (enemy,statetype != L) && (enemy,StateType != C)
+trigger1            = (P2BodyDist X <= 30 && Ctrl) && (Random <= 400)
+value               = 204
+
+[State -3:          Strong Kick Large]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = S) && (enemy,statetype != L) && (enemy,StateType != C)
+trigger1            = (P2BodyDist X <= 30 && Ctrl) && (Random <= 450)
+value               = 205
+
+[State -3:          Strong Kick Small]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = S) && (enemy,statetype != L) && (enemy,StateType != C)
+trigger1            = (P2BodyDist X <= 30 && Ctrl) && (Random <= 500)
+value               = 206
+
+[State -3:          Strong Kick Small]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = S) && (enemy,statetype != L) && (enemy,StateType != C)
+trigger1            = (P2BodyDist X <= 30 && Ctrl) && (Random <= 500)
+value               = 207
+;---------------------------------------------------------------------------;
+
+;---------------------------------------------------------------------------;
+;                          [ Crunch Moves IA ]                              ;
+;---------------------------------------------------------------------------;
+[State -3:          Light Punch]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = C) && (enemy,statetype != L)
+trigger1            = (P2BodyDist X <= 35) && (Ctrl) && (Random <= 250) 
+value               = 400
+
+[State -3:          Strong Punch]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = C) && (enemy,statetype != L)
+trigger1            = (P2BodyDist X <= 30) && (Ctrl) && (Random <= 200)
+trigger2            = (StateNo = 402) && (Random <= 800) && (P2BodyDist X <= 30)
+trigger3            = (StateNo = 401) && (Random <= 800) && (P2BodyDist X <= 30)
+value               = 401
+
+[State -3:          Light Kick]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = C) && (enemy,statetype != L)
+trigger1            = (P2BodyDist X <= 30) && (Ctrl) && (Random <= 500)
+value               = 402
+
+[State -3:          Strong Kick]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = C) && (enemy,statetype != L)
+trigger1            = (P2BodyDist X <= 30) && (Ctrl) && (Random <= 300)
+trigger2            = (StateNo = 402) && (Random <= 800) && (P2BodyDist X <= 30)
+trigger3            = (StateNo = 401) && (Random <= 800) && (P2BodyDist X <= 30)
+value               = 403
+;---------------------------------------------------------------------------;
+
+;---------------------------------------------------------------------------;
+;                            [ Air Moves IA ]                               ;
+;---------------------------------------------------------------------------;
+[State -1:          Light Punch]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = A) && (Ctrl) && (enemy,statetype != L)
+trigger1            = (P2BodyDist X <= 70 && P2BodyDist Y <= 40) && Random <= 150 && time > 8
+value               = 600
+
+[State -1:          Strong Punch]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = A) && (Ctrl) && (enemy,statetype != L)
+trigger1            = (P2BodyDist X <= 60 && P2BodyDist Y <= 40) && Random <= 200 && time > 8
+value               = 601
+
+[State -1:          Light Kick]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = A) && (Ctrl) && (enemy,statetype != L)
+trigger1            = (P2BodyDist X <= 80 && P2BodyDist Y <= 20) && Random <= 250 && time > 8
+value               = 602
+
+[State -1:          Stron Kick]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = A) && (Ctrl) && (enemy,statetype != L)
+trigger1            = (P2BodyDist X <= 70 && P2BodyDist Y <= 30) && Random <= 300 && time > 8
+value               = 603
+
+[State -1:         Kick KOF]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = A) && (Ctrl) && (enemy,statetype != L)
+trigger1            = (P2BodyDist X <= 70 && P2BodyDist Y <= 30) && Random <= 350 && time > 8
+value               = 604
+
+[State -1:         Kick KOF]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = A) && (Ctrl) && (enemy,statetype != L)
+trigger1            = (P2BodyDist X <= 70 && P2BodyDist Y <= 30) && Random <= 350 && time > 8
+value               = 605
+
+[State -1:         Kick KOF]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = A) && (Ctrl) && (enemy,statetype != L)
+trigger1            = (P2BodyDist X <= 70 && P2BodyDist Y <= 30) && Random <= 350 && time > 8
+value               = 606
+
+[State -1:         Kick KOF]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = A) && (Ctrl) && (enemy,statetype != L)
+trigger1            = (P2BodyDist X <= 70 && P2BodyDist Y <= 30) && Random <= 350 && time > 8
+value               = 607
+;---------------------------------------------------------------------------;
+
+;---------------------------------------------------------------------------;
+;                               [ IA Grooves ]                              ;
+;---------------------------------------------------------------------------;
+;[State -3:          Power Charge]
+;type                = ChangeState
+;triggerall          = (power < 3000 && PrevStateNo != 900) && (var(4) = 1) && (p2statetype = L) && (Statetype = S)
+;trigger1            = (P2BodyDist X >= 100) && (Random <= 998)
+;value               = 500
+
+[State -3:          Alpha Counter]
+type                = ChangeState
+triggerall          = (power >= 1000) && (var(4) = 1) && (Statetype = S)
+trigger1            = (stateno = 150||stateno = 151||stateno = 152||stateno = 153) && (P2BodyDist X >= 100) && (Random <= 500)
+value               = 504
+
+[State -3:          Alpha Counter Recovery]
+type                = ChangeState
+triggerall          = (power >= 500) && (var(4) = 1) && (Statetype = S)
+trigger1            = (stateno = 150||stateno = 151||stateno = 152||stateno = 153) && (P2BodyDist X <= 60) && (Random <= 500)
+value               = 502
+;---------------------------------------------------------------------------;
+
+;---------------------------------------------------------------------------;
+;                           [ IA Rugal CVS MODE ]                           ;
+;---------------------------------------------------------------------------;
+[State -3:          Gigatic Pressure Level 1]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype != A) && (power = [1000,1999])
+trigger1            = (P2BodyDist X = [30,80]) && (enemy,MoveType = I) && (Ctrl) && Random <= 200
+trigger2            = (P2BodyDist X <= 30) && (enemy,MoveType = A) && (Ctrl) && Random <= 550
+trigger3            = (StateNo = 200||StateNo = 201||StateNo = 202||StateNo = 203||StateNo = 204||StateNo = 205||StateNo = 206||StateNo = 207||StateNo = 208) && (movehit) && (Random <= 600) && (P2BodyDist X <= 50)
+trigger4            = (StateNo = 400||StateNo = 401||StateNo = 402||StateNo = 403) && (movehit) && (Random <= 300) && (P2BodyDist X <= 50)
+trigger5            = (PrevStateNo = [700,800])||(PrevStateNo = [801,999])
+value               = ifelse(random%2,1000,1010)
+
+[State -3:          Reppuken Strong]
+type                = ChangeState
+triggerall          = (var(7) = 0 && var(4) = 1) && (P2statetype != L && floor(p2dist y) > -50) && (statetype = S)
+trigger1            = !numhelper(901) && !numhelper(922) && (P2BodyDist X >= 100 && Ctrl) && (Random <= 250)
+trigger2            = (StateNo = 200||StateNo = 201||StateNo = 202||StateNo = 203||StateNo = 204||StateNo = 205||StateNo = 206||StateNo = 207||StateNo = 208) && (movehit) && (Random <= 600) && (P2BodyDist X <= 50)
+trigger3            = (StateNo = 400||StateNo = 401||StateNo = 402||StateNo = 403) && (movehit) && (Random <= 300) && (P2BodyDist X <= 50)
+value               = 900
+
+[State -3:          Dark Barrier Strong]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype != A) && (enemy,statetype != L) && (floor(p2dist y) > -80)
+trigger1            = (statetype = S) && (ctrl) && (random <= 200) && (p2bodydist x = [0,120])
+trigger2            = (statetype = S) && (ctrl) && (enemy,numproj >= 1) && (random <= 800)
+trigger3            = (StateNo = 200||StateNo = 201||StateNo = 202||StateNo = 203||StateNo = 204||StateNo = 205||StateNo = 206||StateNo = 207||StateNo = 208) && (movehit) && (Random <= 600) && (P2BodyDist X <= 50)
+trigger4            = (StateNo = 400||StateNo = 401||StateNo = 402||StateNo = 403) && (movehit) && (Random <= 300) && (P2BodyDist X <= 50)
+value               = 919
+
+[State -3:          Kaiser Wave Light]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = S)
+trigger1            = !numhelper(901) && !numhelper(922) && (P2BodyDist X >= 200 && Ctrl) && (Random <= 50)
+trigger2            = (StateNo = 200||StateNo = 201||StateNo = 202||StateNo = 203||StateNo = 204||StateNo = 205||StateNo = 206||StateNo = 207||StateNo = 208) && (movehit) && (Random <= 600) && (P2BodyDist X <= 50)
+trigger3            = (StateNo = 400||StateNo = 401||StateNo = 402||StateNo = 403) && (movehit) && (Random <= 300) && (P2BodyDist X <= 50)
+value               = 950
+
+[State -3:          Kaiser Wave Strong]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (statetype = S)
+trigger1            = !numhelper(901) && !numhelper(922) && (P2BodyDist X >= 200 && Ctrl) && (Random <= 50)
+trigger2            = (StateNo = 200||StateNo = 201||StateNo = 202||StateNo = 203||StateNo = 204||StateNo = 205||StateNo = 206||StateNo = 207||StateNo = 208) && (movehit) && (Random <= 600) && (P2BodyDist X <= 50)
+trigger3            = (StateNo = 400||StateNo = 401||StateNo = 402||StateNo = 403) && (movehit) && (Random <= 300) && (P2BodyDist X <= 50)
+value               = 954
+
+[State -3:          Genocide Strong]
+type                = ChangeState
+triggerall          = (var(4) = 1) && (enemy,statetype != L)
+trigger1            = (statetype != A) && (P2BodyDist X <= 70) && (Ctrl) && (Random <= 500) && (prevstateno != 1072)
+trigger2            = (StateNo = 200||StateNo = 201||StateNo = 202||StateNo = 203||StateNo = 204||StateNo = 205||StateNo = 206||StateNo = 207||StateNo = 208) && (movehit) && (Random <= 600) && (P2BodyDist X <= 50)
+trigger3            = (StateNo = 400||StateNo = 401||StateNo = 402||StateNo = 403) && (movehit) && (Random <= 300) && (P2BodyDist X <= 50)
+value               = 970
+
+[State -3:          God Press Light]
+type                = ChangeState
+triggerall          = (var(7) = 0 && var(4) = 1) && (statetype = S) && (enemy,statetype != L)
+trigger1            = (P2BodyDist X = [0,150]) && (Ctrl) && (Random <= 100) 
+trigger2            = (StateNo = 200||StateNo = 201||StateNo = 202||StateNo = 203||StateNo = 204||StateNo = 205||StateNo = 206||StateNo = 207||StateNo = 208) && (movehit) && (Random <= 600) && (P2BodyDist X <= 50)
+trigger3            = (StateNo = 400||StateNo = 401||StateNo = 402||StateNo = 403) && (movehit) && (Random <= 300) && (P2BodyDist X <= 50)
+trigger4            = (P2StateNo = 1125) && (P2BodyDist X >= 70 && P2BodyDist Y >= -50) && (Ctrl) && (Random <= 300)
+value               = 990
+
+[State -3:          Dragon]
+type                = ChangeState
+triggerall          = (var(7) = 0 && var(4) = 1) && (statetype = S) && (enemy,statetype != L) && (P2StateNo != 1125)
+trigger1            = (P2BodyDist X = [0,150]) && (Ctrl) && (Random <= 200)
+trigger2            = (StateNo = 200||StateNo = 201||StateNo = 202||StateNo = 203||StateNo = 204||StateNo = 205||StateNo = 206||StateNo = 207||StateNo = 208) && (movehit) && (Random <= 600) && (P2BodyDist X <= 50)
+trigger3            = (StateNo = 400||StateNo = 401||StateNo = 402||StateNo = 403) && (movehit) && (Random <= 300) && (P2BodyDist X <= 50)
+value               = ifelse(random%2,960,980)
+
+[State -1:         Dark Eagle Strong]
+type                = ChangeState
+triggerall          = (var(7) = 0 && var(4) = 1) && (statetype = A) && (Ctrl) && (enemy,statetype != L) && (!numprojid(1000)&&!numprojid(1002)&&!numhelper(1000)&&!numhelper(1001))
+trigger1            = (P2BodyDist X <= 80) && Random <= 300 && time > 8
+trigger2            = (StateNo = 600||StateNo = 601||StateNo = 602||StateNo = 603||StateNo = 604||StateNo = 605||StateNo = 606||StateNo = 607) && (movehit) && (Random <= 500)
+value               = 890
+;---------------------------------------------------------------------------;

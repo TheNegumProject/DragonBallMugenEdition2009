@@ -1,0 +1,293 @@
+;Stage "Arena de Cell (dia)", de Lord Tahattus!
+
+[info]
+name = "Cell Games"
+
+; CAMERA
+[camera]
+startx = 0
+starty = 0
+boundleft = -180
+boundright = 178
+boundhigh = -220
+boundlow = 0
+verticalfollow = 1
+tension = 50
+
+[playerinfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+topbound  = 0
+botbound  = 0
+
+[scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[bound]
+screenleft = 30
+screenright = 30
+
+[stageinfo]
+zoffset   = 215
+autoturn  = 1
+resetbg  = 1
+
+[shadow]
+color = 128,128,128
+yscale = .3
+reflect = 0
+
+[Music]
+bgmusic = sound/ble.mp3
+bgvolume = 255
+
+[StageInfo]
+zoffset = 0
+zoffsetlink = 1
+autoturn = 1
+resetBG = 0
+
+[shadow]
+color = 2,2,2
+yscale = .1
+reflect = 0
+
+;MORRE SE CAI DA ARENA!!!!
+;-------------------
+[BG z]
+type  = dummy
+start = 0, 160      ; <-------- initial Z-Offset = 220
+id = 1
+
+; This is where the ID number is Set, ID numbers should be unique
+; for each stage, when you make yours, use your own unique ID number
+; and set that using this PosSet Controler
+[BGCtrl stageID 1]
+type = PosSet
+time = 1
+y = 9841
+ctrlID = 1
+
+; Volta ao normal
+; Back to normal
+[BGCtrl stageID 2]
+type = PosSet
+time = 2
+y = 0
+ctrlID = 1
+
+;---------------------
+
+; GRÁFICOS!!!
+
+[bgdef]
+spr = stages/CellGameUB.sff
+debugbg = 0
+
+[bg ceu]
+type  = normal
+spriteno = 2,0
+start = 0,160
+delta = .4,.5
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+
+[bg nuvem pqn 1]
+type=normal
+spriteno = 70,1
+start = 200, -300
+delta = 1, 1
+scale = .8,.8
+velocity = -0.1
+mask = 1
+layerno = 0
+tilespacing = 400
+tile = 1, 0
+trans = add
+
+[bg nuvem pqn 2]
+type=normal
+spriteno = 70,1
+start = 180, -260
+delta = 1, 1
+scale = .8,.8
+velocity = -0.1
+mask = 1
+layerno = 0
+tilespacing = 320
+tile = 1, 0
+trans = add
+
+[bg nuvem pqn 2]
+type=normal
+spriteno = 70,1
+start = -80, -280
+delta = 1, 1
+scale = .8,.8
+velocity = -0.1
+mask = 1
+layerno = 0
+tilespacing = 320
+tile = 1, 0
+trans = add
+
+[bg evensmallmontanhas]
+type=normal
+spriteno = 50,1
+start = 0, 78
+delta = .4,.8
+mask = 1
+trans = none
+layerno = 0
+tile = 1, 0
+
+[bg smallmontanhas]
+type=normal
+spriteno = 50,0
+start = 0, 78
+delta = .8,.89
+mask = 1
+trans = none
+layerno = 0
+tile = 1, 0
+
+[bg montanhas]
+type = normal
+spriteno = 0,4
+start = -20, 46
+delta = 0.9,.98
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+
+[bg arvore direita]
+type=normal
+spriteno = 10,1
+start = 200, 112
+delta = .96,.96
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+
+[bg arvore esquerda]
+type=normal
+spriteno = 10,0
+start = -353, 142
+delta = .9,.9
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+
+[bg chao]
+type=normal
+spriteno = 7,0
+start = -1, 151
+delta = 1,1
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+
+[bg pilar pqn da esquerda]
+type=normal
+spriteno = 0,6
+start = -126, 186
+delta = 1, 1
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+
+[bg pilar pqn da direita]
+type=normal
+spriteno = 0,6
+start = 124, 186
+delta = 1,1
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+
+[bg arena]
+type= parallax
+spriteno = 0,0
+start = 0,204
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+delta = 1,1
+
+xscale = 1.0,0.5
+yscale = .915,1.123
+
+[bg pilar grande da esquerda]
+type=normal
+spriteno = 0,5
+start = -345, 260
+delta = 1, 1
+mask = 1
+trans = none
+layerno = 1
+tile = 0, 0
+
+[bg matinho 1]
+type=normal
+spriteno = 3,3
+start = -344, 253
+delta = 1, 1
+mask = 1
+trans = none
+layerno = 1
+tile = 0, 0
+
+[bg pilar grd da direita]
+type=normal
+spriteno = 0,5
+start = 342, 260
+delta = 1, 1
+mask = 1
+trans = none
+layerno = 1
+tile = 0, 0
+
+[bg nuvem grande 1]
+type=normal
+spriteno = 70,0
+start = 0, -210
+delta = 1, 1
+velocity = -0.25
+mask = 1
+layerno = 1
+tilespacing = 300
+tile = 1, 0
+trans = add
+
+[bg nuvem grande 2]
+type=normal
+spriteno = 70,0
+start = 200, -330
+delta = 1, 1
+scale = .8,.8
+velocity = -0.5
+mask = 1
+layerno = 1
+tilespacing = 400
+tile = 1, 0
+trans = add

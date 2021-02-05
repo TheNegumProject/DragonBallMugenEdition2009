@@ -1,0 +1,39 @@
+;==============================
+;"Cell", from Super Boutuden 2
+;==============================
+
+;----------------------------------------
+;Author:	The Necromancer
+;		flowergirl@cutey.com
+;----------------------------------------
+
+;---------------------
+;Character Information
+;---------------------
+[Info]
+name			="[Necromancer's] Cell"
+displayname		="Cell"
+versiondate		=09,12,2002
+mugenversion		=04,14,2002
+author			="The Necromancer"
+pal.defaults		=1,2,3,4,5,6
+
+;---------------
+;Character Files 
+;---------------
+[Files]
+cmd			=CellCMD.cmd
+cns			=CellCNS.cns
+st			=CellCNS.cns
+stcommon		=CellCNS.cns
+sprite		=CellSFF.sff
+anim			=CellAIR.air
+sound			=CellSND.snd
+pal1=Cell01.act
+
+;[Arcade]
+;intro.storyboard = CellIntro.def
+;ending.storyboard = CellEnding.def
+[Arcade]
+intro.storyboard=
+ending.storyboard=

@@ -1,0 +1,22 @@
+
+[Info]
+name="Goku super saiyajin 5"
+displayname="Goku SSJ5"
+mugenversion=01.04.14
+author="FRS GAMES > Franciynaldo"
+versiondate=9/19/2006
+pal.defaults=1,2,3,4,5,6
+
+[Files]
+cns=CNS.cns
+st=CNS.cns
+cmd=CMD.cmd
+stcommon=common1.cns
+sprite=Sprite.sff
+anim=Air.air
+sound=Sound.snd
+pal1=paleta/Goku4.act
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

@@ -1,0 +1,27 @@
+; Definition file for Kung Fu Man
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="NEW GOGETA"
+displayname ="Gogeta SSJ4"
+versiondate =07,06,2007
+mugenversion =04,14,2001
+author ="JRX"
+pal.defaults =6,3,4,2
+
+; Files for the player
+[Files]
+cmd     =ssj4.cmd
+cns     =kfm.cns
+st      =kfm.cns
+stcommon =Ssj4.cns
+sprite  =ssj4.sff
+anim    =ssj4.air
+sound   =ssj4.snd
+pal1=ssj4.act
+
+; Arcade mode
+[Arcade]
+intro.storyboard = 
+ending.storyboard =

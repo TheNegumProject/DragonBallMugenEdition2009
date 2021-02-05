@@ -1,0 +1,981 @@
+;Programming by Pextin
+
+; Sokidan
+[Statedef 1888]
+type    = S
+movetype= A
+physics = S
+juggle  = 4
+velset = 0,0
+anim = 1888
+poweradd = -1500
+ctrl = 0
+
+[State 888]
+type = SuperPause
+trigger1 = Time = 2
+pos = 0, -60
+anim = 30
+time = 30
+movetime = 30
+
+[state 889]
+type = varset
+trigger1 = time = 0
+fv = 8
+value = 0
+
+[state 889]
+type = varadd
+trigger1 = time > 3
+fv = 8
+value = .05
+
+[state 889]
+type = explod
+trigger1 = time > 3
+trigger1 = time < 23
+anim = 889
+ID = 889
+pos = 10,-35
+scale = fvar(8),fvar(8)
+postype = P1
+ownpal = 0
+sprpriority = 2
+removetime = 1
+
+[State 111, explod] 
+type = Explod
+trigger1 = time >= 0
+trigger1 = time <= 35
+trigger1 = numexplod(8810) = 0
+trigger1 = pos y >= 0
+anim = 8810
+postype = p1
+pos = 0,0
+sprpriority = -2
+ID = 8810
+removetime = -2
+scale = .6,.6
+removeongethit = 1
+supermovetime = -1
+bindtime = -1
+
+[State 111, explod] 
+type = Explod
+trigger1 = time >= 0
+trigger1 = time <= 35
+trigger1 = numexplod(8813) = 0
+trigger1 = pos y >= 0
+anim = 8813
+postype = p1
+pos = 2,3
+sprpriority = 3
+ID = 8813
+removetime = -2
+scale = 1,1
+removeongethit = 1
+supermovetime = -1
+bindtime = -1
+
+[State 111, explod] 
+type = Explod
+trigger1 = time = 35
+trigger1 = pos y >= 0
+anim = 8801
+postype = p1
+pos = -18,3
+sprpriority = 3
+ID = 8801
+removetime = -2
+scale = 1,1
+removeongethit = 1
+supermovetime = -1
+bindtime = -1
+
+[State 111, explod] 
+type = Explod
+trigger1 = time = 35
+trigger1 = pos y >= 0
+anim = 8801
+postype = p1
+pos = 25,3
+sprpriority = 3
+ID = 8801
+removetime = -2
+scale = 1,1
+facing = -1
+removeongethit = 1
+supermovetime = -1
+bindtime = -1
+
+[State 191, 1]
+type = EnvColor
+trigger1 = time = 35
+value = 255,255,255
+time = 6
+
+[State 888]
+type = PlaySnd
+trigger1 = Time = 32
+value = 888, 1
+volume = 255
+
+[State 888]
+type = PlaySnd
+trigger1 = Time = 2
+value = 18, 0
+volume = 255
+
+[State 888]
+type = PlaySnd
+trigger1 = Time = 2
+value = 888, 0
+volume = 255
+
+[state 1888]
+type = helper
+trigger1 = animelem = 3
+trigger1 = NumHelper(1888) = 0
+trigger1 = time <= 107
+helpertype = normal
+name = "Sokidan"
+ID = 1888
+pos = -15,-68
+postype = p1
+stateno = 1889
+keyctrl = 1
+ownpal = 1
+
+[State 1888]
+type = NotHitBy
+trigger1 = Time = 2
+value = SCA
+time = 50
+
+[State 1888]
+type = ChangeState
+trigger1 = NumHelper(1888) = 0
+trigger1 = time > 50
+value = 0
+ctrl = 1
+
+; Sokidan Itself
+[Statedef 1889]
+type    = S
+movetype= A
+poweradd= 0
+ctrl = 0
+anim = 889
+
+[State 889]
+type = AssertSpecial
+trigger1 = time >= 0
+flag = noshadow
+
+[State 1889]
+type = Screenbound
+trigger1 = time > 0
+value = 1
+
+[State 1889]
+type = HitDef
+trigger1 = time = 0
+attr = S, HA
+animtype  = Hard
+damage    = 225,25
+getpower  = 0
+priority  = 6
+guardflag = MA
+pausetime = 0,15
+sparkxy = -10,65
+sparkno = -1
+hitsound   = S8,0
+guardsound = 6,0
+ground.type = Low
+ground.slidetime = 22
+ground.hittime  = 22
+ground.velocity = -6
+air.velocity = -3,-3
+fall.animtype = Hard
+fall = 1
+
+[State 1889]
+type = velset
+trigger1 = time = 0
+y = -1.5
+x = 0
+
+[State 1889]
+type = veladd
+trigger1 = P2Dist X < 0
+trigger1 = time >= 15
+trigger1 = vel x > -3.5
+x = -.4
+
+[State 1889]
+type = velset
+trigger1 = P2Dist X < 0
+trigger1 = time >= 15
+trigger1 = vel x < -3.5
+x = -3.5
+
+[State 1889]
+type = velset
+trigger1 = P2Dist X = 0
+trigger1 = time >= 15
+x = 0
+
+[State 1889]
+type = veladd
+trigger1 = P2Dist X > 0
+trigger1 = time >= 15
+trigger1 = vel x < 3.5
+x = .4
+
+[State 1889]
+type = velset
+trigger1 = P2Dist X > 0
+trigger1 = time >= 15
+trigger1 = vel x > 3.5
+x = 3.5
+
+[State 1889]
+type = veladd
+trigger1 = P2Dist Y < 0
+trigger1 = time >= 15
+trigger1 = vel y > -3.5
+y = -.4
+
+[State 1889]
+type = velset
+trigger1 = P2Dist Y < 0
+trigger1 = time >= 15
+trigger1 = vel y < -3.5
+y = -3.5
+
+[State 1889]
+type = velset
+triggerall = time >= 15
+trigger1 = P2Dist Y = 0
+trigger2 = pos y >= (enemynear, pos y) - 35
+trigger2 = pos y <= (enemynear, pos y) - 35
+y = 0
+
+[State 1889]
+type = veladd
+trigger1 = time >= 15
+trigger1 = P2Dist Y > 0
+trigger1 = Pos Y < -35
+trigger1 = vel y <= 3.5
+y = .4
+
+[State 1889]
+type = velset
+trigger1 = time >= 15
+trigger1 = P2Dist Y > 0
+trigger1 = Pos Y < -35
+trigger1 = vel y > 3.5
+y = 3.5
+
+[State 1889]
+type = ChangeAnim
+trigger1 = Anim != 892
+trigger1 = Vel X < .6 ; != 3.5
+trigger1 = Vel X > -.6 ; != -3.5
+trigger1 = Vel Y < -.6 ;= -3.5
+value = 892
+
+[State 1889]
+type = ChangeAnim
+trigger1 = Anim != 899
+trigger1 = Vel X > .6 ;= 3.5
+trigger1 = Vel Y < -.6 ;= -3.5
+value = 899
+
+[State 1889]
+type = ChangeAnim
+trigger1 = Anim != 902
+trigger1 = Vel X < -.6 ;= -3.5
+trigger1 = Vel Y < -.6 ;= -3.5
+value = 902
+
+[State 1889]
+type = ChangeAnim
+triggerall = Anim != 890
+trigger1 = Vel X > .6 ;= 3.5
+trigger1 = Vel Y >= -.6;!= -3.5
+trigger1 = Vel Y <= .6 ;!= 3.5
+value = 890
+
+[State 1889]
+type = ChangeAnim
+triggerall = Anim != 891
+trigger1 = Vel X < -.6 ; = -3.5
+trigger1 = Vel Y >= -.6;!= -3.5
+trigger1 = Vel Y <= .6 ;!= 3.5
+value = 891
+
+[State 1889]
+type = ChangeAnim
+triggerall = Anim != 893
+trigger1 = Vel Y > .6 ;= 3.5
+trigger1 = Vel X <= .6 ;!= 3.5
+trigger1 = Vel X >= -.6 ;!= -3.5
+value = 893
+
+[State 1889]
+type = ChangeAnim
+trigger1 = Anim != 900
+trigger1 = Vel X > .6 ;= 3.5
+trigger1 = Vel Y > .6;= 3.5
+value = 900
+
+[State 1889]
+type = ChangeAnim
+trigger1 = Anim != 901
+trigger1 = Vel X < -.6 ;= -3.5
+trigger1 = Vel Y > .6 ;= 3.5
+value = 901
+
+[state 889]
+type = explod
+trigger1 = (MoveContact = 1) || (Parent, Movetype = H)
+anim = 8805
+ID = 1900
+pos = 0,-15
+scale = 1,1
+postype = P1
+ownpal = 0
+sprpriority = 2
+removetime = -2
+
+[State 1889]
+type = Destroyself
+trigger1 = MoveContact = 1 || (Parent, Movetype = H)
+
+[Statedef -2]
+
+[State -2: DisplayToClipBoard]
+type = DisplayToClipBoard
+trigger1 = 1
+text = "Variable 4: %d,S-JumpVar24: %d"
+params = Var(4),Var(24)
+
+[State -2]
+type = EnvShake
+trigger1 = prevstateno = 190
+time = 2
+
+[State -2]
+type = Varset
+trigger1 = command = "holdb"
+trigger1 = command = "holdy"
+trigger1 = Var(12) != 1
+v = 12
+value = 1
+
+[State -2]
+type = Varset
+trigger1 = stateno != 2000
+trigger1 = stateno != 2400
+trigger1 = stateno != 2401
+trigger1 = Var(12) != 0
+v = 12
+value = 0
+
+[State -2, Laughter]
+type = Varset
+trigger1 = stateno != 200
+trigger1 = stateno != 201
+trigger1 = stateno != 202
+trigger1 = stateno != 210
+trigger1 = stateno != 211
+trigger1 = stateno != 212
+trigger1 = stateno != 213
+trigger1 = stateno != 2022
+trigger1 = stateno != 111
+trigger1 = stateno != 333
+trigger1 = stateno != 555
+trigger1 = stateno != 999
+trigger1 = stateno != 994
+trigger1 = stateno != 620
+trigger1 = stateno != 2000
+trigger1 = stateno != 2001
+trigger1 = stateno != 1055
+trigger1 = stateno != 251
+trigger1 = stateno != 260
+v = 8
+value = 0
+
+[State -2, Laughter]
+type = Varset
+triggerall = alive = 1
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 213
+trigger8 = stateno = 2022
+trigger9 = stateno = 111
+trigger10 = stateno = 333
+trigger11 = stateno = 555
+trigger12 = stateno = 999
+trigger13 = stateno = 994
+trigger14 = stateno = 620
+trigger15 = stateno = 2000
+trigger16 = stateno = 2001
+trigger17 = stateno = 1055
+trigger18 = stateno = 251
+trigger19 = stateno = 260
+v = 8
+value = 1
+
+[State -2, Laughter]
+type = Playsnd
+trigger1 = (Gametime%500) = 0
+trigger1 = Random <= 50
+trigger1 = Var(8) != 1
+trigger1 = RoundState = 2
+trigger1 = alive = 1
+value = ifelse(random < 499, 18, 17) , 0
+channel = 0
+volume = 350
+
+[State -1]
+type = Stopsnd
+trigger1 = stateno != 190
+trigger1 = alive = 1
+value = 190, 0
+channel = 3
+
+[State -2, Laughter]
+type = Stopsnd
+triggerall = alive = 1
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 213
+trigger8 = stateno = 2022
+trigger9 = stateno = 111
+trigger10 = stateno = 333
+trigger11 = stateno = 555
+trigger12 = stateno = 999
+trigger13 = stateno = 994
+trigger14 = stateno = 620
+trigger15 = stateno = 2000
+trigger16 = stateno = 2001
+trigger17 = stateno = 1055
+trigger18 = stateno = 251
+trigger19 = stateno = 260
+value = 17,0
+channel = 0
+
+[State -2, Laughter]
+type = Stopsnd
+triggerall = alive = 1
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 213
+trigger8 = stateno = 2022
+trigger9 = stateno = 111
+trigger10 = stateno = 333
+trigger11 = stateno = 555
+trigger12 = stateno = 999
+trigger13 = stateno = 994
+trigger14 = stateno = 620
+trigger15 = stateno = 2000
+trigger16 = stateno = 2001
+trigger17 = stateno = 1055
+trigger18 = stateno = 251
+trigger19 = stateno = 260
+value = 18,0
+channel = 0
+
+[State -2]
+type = PlaySnd
+trigger1 = LoseKO
+trigger1 = time = 1
+trigger1 = var(9) = 0
+value = 12,0
+
+[State -2]
+type = SuperPause
+trigger1 = P1name != "Cell-Jr by Pextin"
+time = 10000000000000000000000000000000
+
+[State -2]
+type = varset
+trigger1 = LoseKO
+trigger1 = time = 1
+var(9) = 1
+
+[State -2]
+type = PlaySnd
+trigger1 = var(10) = 0
+trigger1 = GetHitVar(fall) = 1
+trigger1 = GetHitVar(hitcount) < 2
+trigger1 = time = 0
+trigger1 = alive = 1
+value = 12,0
+
+[State -2]
+type = Varset
+trigger1 = Stateno != 281
+trigger1 = Var(11) != 0
+v = 11
+value = 0
+
+[State -2]
+type = varset
+trigger1 = GetHitVar(fall) = 1
+trigger1 = time = 1
+trigger1 = alive = 1
+var(10) = 1
+
+[State -2]
+type = varset
+trigger1 = stateno < 5000
+trigger1 = time = 1
+trigger1 = alive = 1
+var(10) = 0
+
+;AI Come Down
+[State -2]
+type = ChangeState
+trigger1 = Stateno = 1500
+trigger1 = Var(4) >= 1
+trigger1 = P2BodyDist Y >= 20
+value = 15100
+
+[State -2]
+type = AssertSpecial
+trigger1 = 1
+flag = nokoslow
+
+;Run Fwd
+[State -2, Run Fwd]
+type = ChangeState
+value = 100
+triggerall = !win
+triggerall = alive = 1
+trigger1 = Var(4) >= 1
+trigger1 = Random <=30
+trigger1 = P2bodydist X > 10
+trigger1 = statetype = S
+trigger1 = ctrl
+
+; Guarding
+[State -2]
+type = ChangeState
+value = 120
+triggerall = !win
+triggerall = alive = 1
+triggerall = p2movetype = A
+triggerall = Var(4) >= 1
+triggerall = Random <= 349
+trigger1 = ctrl
+
+; Var for Super Jump
+[State -2]
+type = varadd
+trigger1 = 1
+trigger1 = p2bodydist y < -10
+trigger1 = var(24) <=200
+v = 24
+value = 1
+
+[State -2]
+type = varset
+trigger1 = 1
+trigger1 = p2bodydist y >= -10
+v = 24
+value = 0
+
+; Super Jump
+[State -2]
+type = ChangeState
+value = 1040
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) >= 1
+trigger1 = P2bodydist X < 50
+trigger1 = var(24) >= 100
+trigger1 = statetype = S
+trigger1 = ctrl
+
+;Fly 
+[State -1]
+type = ChangeState
+value = 1510
+triggerall = Var(4) >= 1
+trigger1 = (statetype != A) && (ctrl = 1)
+trigger1 = var(24) >= 200 && (stateno != 1500)
+;---MOVES--------------------------------------------------------------------
+;Special Beam Cannon
+[State -2]
+type = ChangeState
+value = 3333
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = random <= 30
+triggerall = power >= 1500
+trigger1 = (statetype = S) && (ctrl = 1)
+trigger2 = stateno = 779 && movecontact
+trigger3 = stateno = 250 && movecontact
+trigger4 = stateno = 290 && movecontact
+
+;Sokidan
+[State -2]
+type = ChangeState
+value = 1888
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = random <= 30
+triggerall = power >= 1500
+trigger1 = (statetype = S) && (ctrl = 1)
+
+;Kamehameha
+[State -2]
+type = ChangeState
+value = 2000
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = random <= 5
+triggerall = power >= 1000
+trigger1 = (statetype = S) && (ctrl = 1)
+trigger2 = stateno = 779 && movecontact
+trigger3 = stateno = 250 && movecontact
+trigger4 = stateno = 290 && movecontact
+
+; Throw
+[State -2]
+type = ChangeState
+value = 800
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = P2bodydist X <= 10
+triggerall = (p2statetype = S) || (p2statetype = C)
+trigger1 = stateno = 200 && MoveHit = 1
+trigger1 = Random <= 59
+
+; 1st Punch
+[State -2]
+type = ChangeState
+value = 200
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = P2bodydist X < 30
+triggerall = Random <= 249
+trigger1 = statetype = S
+trigger1 = ctrl
+trigger2 = stateno = 779 && movecontact
+trigger3 = stateno = 1500
+
+; 2nd Punch
+[State -2]
+type = ChangeState
+value = 201
+triggerall = !win
+triggerall = alive = 1
+triggerall = P2bodydist X < 30
+triggerall = Var(4) = 1
+triggerall = Random <= 150
+trigger1 = statetype = S
+trigger1 = ctrl
+trigger2 = stateno = 200 && movecontact
+trigger3 = stateno = 210 && movecontact
+trigger4 = stateno = 779 && movecontact
+
+; Ki Shot
+[State -2]
+type = ChangeState
+value = 1100
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = Random <= 30
+trigger1 = statetype = S
+trigger1 = ctrl
+trigger2 = stateno = 1500
+trigger3 = stateno = 779 && movecontact
+trigger4 = stateno = 290 && movecontact
+trigger5 = stateno = 250 && movecontact
+
+; Kick 1
+[State -2]
+type = ChangeState
+value = 210
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = P2bodydist X < 30
+triggerall = Random <= 149
+trigger1 = statetype = S
+trigger1 = ctrl
+trigger2 = stateno = 1500
+trigger3 = stateno = 200 && movecontact
+trigger4 = stateno = 779 && movecontact
+ignorehitpause = 1
+
+; Kick 2
+[State -2]
+type = ChangeState
+value = 211
+triggerall = !win
+triggerall = alive = 1
+triggerall = P2bodydist X < 30
+triggerall = Var(4) = 1
+triggerall = Random <= 100
+trigger1 = statetype = S
+trigger1 = ctrl
+trigger2 = stateno = 1500
+trigger3 = stateno = 200 && movecontact
+trigger4 = stateno = 201 && movecontact
+trigger5 = stateno = 210 && movecontact
+trigger6 = stateno = 779 && movecontact
+ignorehitpause = 1
+
+;Crouching Punch
+[State -2]
+type = ChangeState
+value = 400
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = P2bodydist X < 30
+triggerall = Random <= 149
+trigger1 = ctrl
+trigger1 = statetype = S
+trigger2 = stateno = 200 && movecontact
+ignorehitpause = 1
+
+;Crouching Uppercut
+[State -2]
+type = ChangeState
+value = 401
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = P2bodydist X < 30
+triggerall = Random <= 100
+trigger1 = ctrl
+trigger1 = statetype = S
+ignorehitpause = 1
+
+;Crouching Kick
+[State -2]
+type = ChangeState
+value = 410
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = P2bodydist X < 30
+triggerall = Random <= 149
+trigger1 = ctrl
+trigger1 = statetype = S
+ignorehitpause = 1
+
+;Crouching Kick
+[State -2]
+type = ChangeState
+value = 411
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = P2bodydist X < 30
+triggerall = Random <= 100
+trigger1 = ctrl
+trigger1 = statetype = S
+trigger2 = stateno = 400 && movecontact
+trigger3 = stateno = 410 && movecontact
+trigger4 = stateno = 201 && movecontact
+ignorehitpause = 1
+
+; Lunge Punch
+[STate -2]
+type = changestate
+value = 250
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = random <= 10
+trigger1 = (statetype = S) || (statetype = C)
+trigger1 = ctrl = 1
+trigger2 = stateno = 200 && movecontact
+trigger3 = stateno = 201 && movecontact
+trigger4 = stateno = 210 && movecontact
+trigger5 = stateno = 211 && movecontact
+trigger6 = stateno = 290 && movecontact
+trigger7 = stateno = 1500
+trigger8 = stateno = 779 && movecontact
+ignorehitpause = 1
+
+; Taioken
+[STate -2]
+type = changestate
+value = 444
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = random <= 5
+trigger1 = (statetype = S) || (statetype = C)
+trigger1 = ctrl = 1
+ignorehitpause = 1
+
+; Zip Strike
+[STate -2]
+type = changestate
+value = 310
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = random <= 10
+trigger1 = (statetype = S) || (statetype = C)
+trigger1 = ctrl = 1
+trigger2 = stateno = 200 && movecontact
+trigger3 = stateno = 201 && movecontact
+trigger4 = stateno = 210 && movecontact
+trigger5 = stateno = 211 && movecontact
+trigger6 = stateno = 1500
+trigger7 = stateno = 779 && movecontact
+trigger8 = stateno = 290 && movecontact
+trigger9 = stateno = 250 && movecontact
+ignorehitpause = 1
+
+;Knee Attack
+[STate -2]
+type = changestate
+value = 290
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = random <= 10
+triggerall = (statetype = S) || (statetype = C)
+trigger1 = ctrl = 1
+trigger2 = stateno = 200 && movecontact
+trigger3 = stateno = 201 && movecontact
+trigger4 = stateno = 210 && movecontact
+trigger5 = stateno = 211 && movecontact
+trigger6 = stateno = 1500
+trigger7 = stateno = 779 && movecontact
+ignorehitpause = 1
+
+;Aerial Knee
+[STate -2]
+type = changestate
+value = 330
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = random <= 15
+trigger1 = ctrl = 1
+trigger1 = statetype = A
+trigger2 = stateno = 600 && movecontact
+trigger3 = stateno = 601 && movecontact
+trigger4 = stateno = 610 && movecontact
+trigger5 = stateno = 611 && movecontact
+trigger6 = stateno = 1500
+trigger7 = stateno = 290 && movecontact
+trigger8 = stateno = 779 && movecontact
+trigger9 = stateno = 250 && movecontact
+ignorehitpause = 1
+
+;Swat
+[STate -2]
+type = changestate
+value = 320
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = random <= 15
+trigger1 = ctrl = 1
+trigger1 = statetype = A
+trigger2 = stateno = 600 && movecontact
+trigger3 = stateno = 601 && movecontact
+trigger4 = stateno = 610 && movecontact
+trigger5 = stateno = 611 && movecontact
+trigger6 = stateno = 1500
+ignorehitpause = 1
+
+;UnderGround
+[STate -2]
+type = changestate
+value = 777
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = random <= 30
+triggerall = P2bodydist X > 30
+triggerall = Pos Y < -30
+trigger1 = ctrl = 1
+trigger1 = statetype = A
+trigger2 = stateno = 1500
+ignorehitpause = 1
+
+; Jump Punch
+[State -2]
+type = ChangeState
+value = 600
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = Random <= 149
+trigger1 = statetype = A
+trigger1 = ctrl
+
+; Jump Punch
+[State -2]
+type = ChangeState
+value = 601
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = Random <= 100
+trigger1 = statetype = A
+trigger1 = ctrl
+trigger2 = stateno = 600 && movecontact
+trigger3 = stateno = 610 && movecontact
+ignorehitpause = 1
+
+; Jump Kick
+[State -2]
+type = ChangeState
+value = 610
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = Random <= 149
+trigger1 = statetype = A
+trigger1 = ctrl
+trigger2 = stateno = 600 && movecontact
+ignorehitpause = 1
+
+ Jump Kick
+[State -2]
+type = ChangeState
+value = 611
+triggerall = !win
+triggerall = alive = 1
+triggerall = Var(4) = 1
+triggerall = Random <= 100
+trigger1 = statetype = A
+trigger1 = ctrl
+trigger2 = stateno = 600 && movecontact
+trigger3 = stateno = 601 && movecontact
+trigger4 = stateno = 610 && movecontact
+ignorehitpause = 1

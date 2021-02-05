@@ -1,0 +1,30 @@
+;.............................................................................................
+[Info]
+name    ="Kakarotto iadora by FRS GAMES"
+displayname ="Goku Iadora"
+author ="FRS GAMES & Dgz Team"
+pal.defaults =1,2      
+versiondate=1/7/2007
+mugenversion=06,14,2003
+
+[Files]
+cmd     =kakaroto.cmd
+cns     =kakaroto.cns
+st      =kakaroto.cns
+stcommon =common1.cns
+sprite  =kakaroto.sff
+anim    =kakaroto.air
+sound   =kakaroto.snd
+pal1=paletas/kakaroto.act
+st1=kaioken.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard=final/final.def
+
+;...........................................................................................
+
+                                ; Feito no Brasil           
+;                              Autor: equipe FRS GAMES
+
+;[[[[[[[[[[[[[[[[[[[[[[E-mail& msn: superkakarotto@hotmail.com]]]]]]]]]]]]]]]]]]]]]]]]]]]]]

@@ -1,0 +1,192 @@
+;=======================================
+[Info]
+Name ="Earth the Night"
+Autor = "LordlEe"
+Web = "http://mugentriforce.shorturl.com"
+displayname="Earth the Night"
+versiondate=7/13/2008
+mugenversion=04,14,2001
+author="RistaR"
+pal.defaults=1,2,3,4,5
+;=======================================
+[Camera]
+
+startx = 0
+starty = 0
+
+boundleft = -150
+boundright = 150
+
+boundhigh = -17
+boundlow = 0
+
+verticalfollow = 0
+floortension = 0
+tension = 60
+
+;=======================================
+[PlayerInfo]
+
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+;=======================================
+[Scaling]
+
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;=======================================
+[Bound]
+
+screenleft = 15
+screenright = 15
+
+;=======================================
+[StageInfo]
+
+zoffset = 200
+
+autoturn = 1
+
+resetBG = 1
+
+;=======================================
+[Shadow]
+
+intensity = 100
+
+color = 0,0,0
+
+yscale = .2
+
+fade.range = -400,-100
+
+;=======================================
+[Reflection]
+
+intensity = 0
+
+;=======================================
+[Music]
+
+bgmusic = sound/thunder break.mp3
+bgvolume = 255
+
+;=======================================
+[BGdef]
+
+spr = earth-the-night.sff
+debugbg = 1
+
+;=======================================
+[BG Fondo]
+type  = normal
+spriteno = 7, 0
+layerno = 0                
+start = 0,0
+delta = .2,.2
+trans = none
+mask  = 0
+tile  = 0, 0
+tilespacing = 0,0
+
+[BG Montañas]
+type  = normal
+spriteno = 0, 0
+layerno = 0                
+start = 0,61
+delta = .1
+trans = none
+mask  = 1
+tile  = 0, 0
+tilespacing = 0,0
+window = 0,0, 319, 239
+windowdelta = 0,0
+
+[BG Niebla Fondo]
+type  = normal
+start = -200,30
+spriteno = 3,0
+delta = .1,1
+mask  = 1
+trans = add
+tile = 1, 0
+
+[BG Hierva]
+type  = normal
+spriteno = 8,0
+start = 0, 133
+delta = 1.0,1
+mask = 1
+trans = sub
+tile = 1, 0
+
+[BG Earth]
+type  = normal
+spriteno = 1,0
+start = 0,96
+delta = 1.0,1
+mask = 1
+tile = 1, 0
+
+[BG Niebla Earth]
+type  = normal
+start = -360,86
+spriteno = 9,0
+mask  = 1
+trans = add
+tile = 1, 0
+
+[BG Luna]
+type  = normal
+start = -150,0
+spriteno = 5,0
+delta = .1
+mask  = 1
+trans = none
+
+[BG Nubes]
+type  = normal
+start = -200,0
+spriteno = 2,0
+delta = .2,1
+mask  = 1
+trans = add
+
+[BG Niebla]
+type  = normal
+start = -200,150
+layerno = 1
+spriteno = 4,0
+delta = 1.0, 1.0
+velocity = .1, 0
+mask  = 1
+trans = add1
+tile = 1, 0
+;=======================================
+[Files]
+sprite=
+sound=
+anim=
+cmd=
+cns=
+st=
+stcommon=
+[Arcade]
+intro.storyboard=
+ending.storyboard=

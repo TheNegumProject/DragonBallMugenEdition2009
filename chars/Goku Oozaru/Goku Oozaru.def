@@ -1,0 +1,20 @@
+[Info]
+name ="Young Goku"
+displayname ="Goku Oozaru"
+versiondate =07,06,2008
+mugenversion =04,14,2002
+author ="Ryon"
+pal.defaults =1
+
+[Files]
+cmd     =KidGoku.cmd
+cns     =KidGoku.cns
+st      =KidGoku.cns
+stcommon =common1.cns
+sprite  =KidGoku.sff
+anim    =KidGoku.air
+sound   =KidGoku.snd
+pal1=Default.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=

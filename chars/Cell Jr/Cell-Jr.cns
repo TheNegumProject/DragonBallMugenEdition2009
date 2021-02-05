@@ -1,0 +1,312 @@
+;Programming by Goten88
+;Variable  2 - FLY
+;Variable  3 - SOKIDAN
+;Variable  4 - AI
+;Variable  5 - AI RENZOKU LIMIT
+;Variable  6 - AI BIG BANG LIMIT
+;Variable  7 - AI DISTRUCTO DISK LIMIT
+;Variable  8 - RANDOM LAUGHTER
+;Variable  9 - LOSE
+;Variable 10 - HIT
+;Variable 11 - COMBO HIT
+;Variable 12 - KAMEHAMEHA
+;Variable 13 - SFM LIMIT
+
+[Data]
+life = 800           
+attack = 80          
+defence = 80      
+fall.defence_up = 50  
+liedown.time = 60    
+airjuggle = 15        
+sparkno = 2        
+guard.sparkno = 40  
+KO.echo = 0           
+volume = 100            
+
+[Size]
+xscale = 1           
+yscale = 1            
+ground.back = 13      
+ground.front = 13     
+air.back = 12         
+air.front = 6      
+z.width = 3          
+height = 40	      
+attack.width = 4,4    
+attack.dist = 160   
+proj.attack.dist = 90  
+proj.doscale = 0
+head.pos = 4,-35  
+mid.pos = 1,-20      
+
+[Velocity]
+walk.fwd  = 3.3       
+walk.back = -3.2     
+run.fwd  = 6.6, 0    
+run.back = -6.5,-3.8  
+jump.neu = 0,-8    
+jump.back = -2.55    
+jump.fwd = 3.5       
+runjump.back = -2.55,-9.1 
+runjump.fwd = 4,-9.1      
+airjump.neu = 0,-6.5      
+airjump.back = -2.55      
+airjump.fwd = 2.5             
+
+[Movement]
+airjump.num = 0      
+airjump.height = 35   
+yaccel = .43          
+stand.friction = .85   
+crouch.friction = .82
+;---------------------------------------------------------------------------
+; RUN_FWD
+[Statedef 100]
+type    = S
+physics = S
+anim = 100
+
+[State 100]
+type = PlaySnd
+trigger1 = time = 1
+value = 1500, 0
+
+[state 730, dust]
+type = explod
+trigger1 = time = 1
+anim = 8801
+pos = -15,0
+postype = P1
+ownpal = 1
+sprpriority = 2
+removetime = -2
+bindtime = 1
+
+[State 100, 1]
+type = VelSet
+trigger1 = 1
+x = 6
+y = 0
+
+[State 100,assert]
+type = AssertSpecial
+trigger1 = command = "holdfwd"
+flag = nowalk
+
+[State 100, 2]
+type = ChangeState
+trigger1 = command != "holdfwd"
+trigger1 = time > 15
+value = 101
+
+[Statedef 101]
+type    = S
+physics = S
+anim = 100
+
+[State 101]
+type = ChangeState
+trigger1 = time = 5
+value = 0
+;---------------------------------------------------------------------------
+ RUN_BACK
+[Statedef 105]
+type    = S
+physics = S
+anim = 105
+
+[state 730, dust]
+type = explod
+trigger1 = time = 1
+anim = 8801
+pos = 15,0
+postype = P1
+ownpal = 1
+facing = -1
+sprpriority = 2
+removetime = -2
+bindtime = 1
+
+[State 105]
+type = PlaySnd
+trigger1 = time = 1
+value = 1500, 0
+
+[State 100, 1]
+type = VelSet
+trigger1 = 1
+x = -6
+y = 0
+
+[State 100,assert]
+type = AssertSpecial
+trigger1 = command = "holdback"
+flag = nowalk
+
+
+[State 100, 2]
+type = ChangeState
+trigger1 = command != "holdback"
+trigger1 = time > 15
+value = 106
+
+[Statedef 106]
+type    = S
+physics = S
+anim = 105
+
+[State 106]
+type = ChangeState
+trigger1 = time = 5
+value = 0
+;---------------------------------------------------------------------------
+; LOSE (Time over)
+[Statedef 170]
+type = S
+ctrl = 0
+anim = 5300
+velset = 0,0,0
+
+[State 170, 1]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+;---------------------------------------------------------------------------
+; WIN
+[Statedef 180]
+type = S
+
+[State 180, 1]
+type = ChangeState
+trigger1 = Time = 0
+value = 181
+;---------------------------------------------------------------------------
+; WIN1
+[Statedef 181]
+type = S
+ctrl = 0
+anim = 181
+velset = 0,0,0
+
+[State 181]
+type = Playsnd
+trigger1 = time = 0
+value = 23,0
+volume = 350
+
+[State 181, 1]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+;---------------------------------------------------------------------------
+; INTRO
+[Statedef 191]
+type = S
+ctrl = 0
+anim = 193
+velset = 0,0,0
+
+[State 191, 1]
+type = AssertSpecial
+trigger1 = Time = [0,100]
+flag = Intro
+
+[State 191]
+type = ChangeState
+trigger1 = Time = 100
+value = 0
+;---------------------------------------------------------------------------
+; INTRO VS VEGETA
+[Statedef 192]
+type = S
+ctrl = 0
+anim = 194
+velset = 0,0,0
+
+[State 192, 1]
+type = AssertSpecial
+trigger1 = Time = [0,200]
+flag = Intro
+
+[State 192]
+type = Playsnd
+trigger1 = time = 0
+value = 18,0
+volume = 350
+
+[State 192]
+type = ChangeState
+trigger1 = Time = 200
+value = 0
+;-------------------------------------------------------------------
+;DIE & BLOW UP
+[Statedef 7777]
+type    = L
+movetype= H
+physics = N
+sprpriority = -3
+ctrl = 0
+anim = 7777
+velset = 0,0
+
+[State 7777]
+type = AssertSpecial
+trigger1 = Time >= 0
+flag = nokoslow
+
+[State 7777]
+type = Varset
+trigger1 = Time = 0
+v = 44
+value = 1 
+
+[State 7777, 1]
+type = PlaySnd
+trigger1 = animelem = 1
+value = 12, 0
+
+[State 7777, 1]
+type = PlaySnd
+trigger1 = time = 8
+value = 8, 0
+
+[State 7777,smoke]
+type = explod
+trigger1 = time = 8
+anim = 7778
+facing = 1
+pos = -55,-60
+postype = p1
+sprpriority = 2
+bindtime = 60
+scale = .7,.7
+ownpal = 1
+supermove = 1
+removetime = -2
+
+[State 7777]
+type = Changestate
+trigger1 = time = 18
+value = 5150
+;-----------------------------------------
+; Taunt
+[Statedef 900]
+type = S
+ctrl = 0
+anim = 181
+velset = 0,0
+
+[State 900]
+type = Playsnd
+trigger1 = time = 0
+value = 23,0
+volume = 350
+
+[State 900]
+type = CtrlSet
+trigger1 = time > 70
+value = 1
+;------------------------------------------------------------

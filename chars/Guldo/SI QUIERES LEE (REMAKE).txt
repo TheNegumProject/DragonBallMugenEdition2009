@@ -1,0 +1,43 @@
+Guldo (Remake) Version 1.1
+
+Sprites: Tincho & Ryudo
+Programacion editada: SaWWeN
+
+;----------------------------------------------------------------
+
+EDICION Y AGREGADOS VERSION 1.0
+
+1) Hechos y agregados todos los sprites del char que antes tenian graficos de Nes
+2) Agregado doble salto y air dash
+3) Terminado el ataque especial del Time freeza
+4) Agregados los botones Z y C (nuevos puños)
+5) Optimizado los comandos para un mejor uso
+
+;-----------------------------------------------------------------
+
+CAMBIOS DE VERSION 1.0 A 1.1
+
+1) Optimizada el char en general para que la jugabilidad sea mas buena:
+ 1-Air run mejorados
+ 2-pequeños saltos con mas alcanze 
+ 3-mas movilidad al char
+ 4-Alargado el tiempo del time freeze
+ 
+2) Cambiado los Portraits grandes y chicos.
+3) Agregado nuevo ataque defensivo de escudo (shield).
+4) Arreglado errores y detalles menores
+5) Hechas un par de paletas para cuando se juega de varios.
+
+//////////////////////////////////////////////////////////////////////////////// 
+
+
+Creditos:
+
+1) Tincho y Ryudo que hicieron todos los sprites nuevos.
+2) A mi por tomarme el tiempo de editar la programacion.
+3) Todos aquellos a los que le gusto.
+
+Creditos especiales:
+
+1) Bandai y Elecbyte
+2) Redeneck por aver hecho este gran char. 
